@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: New Blog Posts Index
 date: "2015-05-01T22:12:03.284Z"
 ---
 
