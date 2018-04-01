@@ -5,7 +5,7 @@ import get from 'lodash/get'
 
 import { rhythm, scale } from '../utils/typography'
 
-class BlogPostTemplate extends React.Component {
+class PortfolioPieceTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
@@ -62,10 +62,10 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default PortfolioPieceTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query PortfolioPieceBySlug($slug: String!) {
     site {
       siteMetadata {
         title
