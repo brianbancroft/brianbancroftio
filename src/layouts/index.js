@@ -64,6 +64,17 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <section>
+          <h1>This is where some stuff goes</h1>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/posts">Posts</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+
+
+        </section>
         {header}
         {children()}
       </Container>
