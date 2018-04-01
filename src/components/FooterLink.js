@@ -32,7 +32,10 @@ class Footer extends React.Component {
       <Link to={props.location}>
         <LinkContainer>
           <IconContainer>
-            <img src={props.iconLink} />
+            <img
+              src={props.iconLink}
+              alt={props.title}
+            />
           </IconContainer>
           <TextContainer>
             {props.title}
