@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import FooterLink from './FooterLink'
+
 const FooterContainer = styled.div`
   position: fixed;
   bottom: 0;
@@ -19,23 +21,37 @@ const LinkSetContainer = styled.div`
   margin: 0 auto;
 `
 
-const LinkContainer = styled.div`
-  background: white;
-  height: 80px;
-  width: 80px;
-  background: #666;
-  color: white;
-`
-
 class Footer extends React.Component {
   render() {
+
+    const footerLinks = [
+      {
+        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/monitor.svg',
+        location: '/',
+        title: 'home'
+      }, {
+        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/image.svg',
+        location: '/portfolio',
+        title: 'portfolio'
+      }, {
+        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/idea.svg',
+        location: '/posts',
+        title: 'posts'
+      }, {
+        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/chat.svg',
+        location: '/contact',
+        title: 'contact'
+      }
+    ]
+
+    const linkItemContent = footerLinks.map(i =>
+      <FooterLink iconLink={i.iconLink} location={i.location} title={i.title} />
+    )
+
     return (
       <FooterContainer>
         <LinkSetContainer>
-          <Link to="/"><LinkContainer>Home</LinkContainer></Link>
-          <Link to="/portfolio"><LinkContainer>Portfolio</LinkContainer></Link>
-          <Link to="/posts"><LinkContainer>Posts</LinkContainer></Link>
-          <Link to="/contact"><LinkContainer>Contact</LinkContainer></Link>
+          {linkItemContent}
         </LinkSetContainer>
       </FooterContainer>
     )
