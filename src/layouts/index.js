@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
+import Footer from '../components/footer'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -58,26 +59,18 @@ class Template extends React.Component {
       )
     }
     return (
-      <Container
+      <div>
+        <Container
         style={{
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
-      >
-        <section>
-          <h1>This is where some stuff goes</h1>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/posts">Posts</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-
-
-        </section>
-        {header}
-        {children()}
-      </Container>
+        >
+          {header}
+          {children()}
+        </Container>
+        <Footer />
+      </div>
     )
   }
 }
