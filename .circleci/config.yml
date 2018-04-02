@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:9.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -27,6 +27,8 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
+      - run: sudo apt-get update && sudo apt-get install -y awscli
+
 
       - save_cache:
           paths:
@@ -34,6 +36,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn test
+      - run: yarn lint
+      - run: yarn build && aws s3 sync public/ s3://brianbancroft.io --delete
 
 
