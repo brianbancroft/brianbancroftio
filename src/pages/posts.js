@@ -11,27 +11,28 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
+    const title = node => get(node, 'frontmatter.title') || node.fields.slug
+
+    const BlogItem = props =>
+      <div key={props.node.fields.slug}>
+        <h3
+          style={{
+            marginBottom: rhythm(1 / 4),
+          }}
+        >
+          <Link style={{ boxShadow: 'none' }} to={props.node.fields.slug}>
+            {props.title}
+          </Link>
+        </h3>
+        <small>{props.node.frontmatter.date}</small>
+        <p dangerouslySetInnerHTML={{ __html: props.node.excerpt }} />
+      </div>
+
+
     return (
       <div>
         <Helmet title={siteTitle} />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        {posts.map(({ node }) => <BlogItem title={title(node)} node={node} /> )}
       </div>
     )
   }
