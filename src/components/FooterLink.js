@@ -4,18 +4,6 @@ import styled from 'styled-components'
 
 import IconContainer from './IconContainer'
 
-
-const LinkContainer = styled.div`
-  background: white;
-  height: 90px;
-  width: 90px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-`
-
 const TextContainer = styled.div`
   text-transform: uppercase;
   font-size: 12px;
@@ -29,7 +17,7 @@ class Footer extends React.Component {
 
     return (
       <Link to={props.location}>
-        <LinkContainer>
+        <div className="link-container">
           <IconContainer>
             <img
               src={props.iconLink}
@@ -39,7 +27,7 @@ class Footer extends React.Component {
           <TextContainer>
             {props.title}
           </TextContainer>
-        </LinkContainer>
+        </div>
       </Link>
     )
   }

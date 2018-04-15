@@ -12,3 +12,14 @@
   width: 600px;
   margin: 0 auto;
 }
+
+.link-container {
+  background: white;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
