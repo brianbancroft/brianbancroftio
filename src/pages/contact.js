@@ -17,7 +17,7 @@ class Contact extends React.Component {
             <a href="https://github.com/brianbancroft" target="_blank"><FaGithubSquare size={56}/></a>
           </div>
           <div className="contacts-container__contact">
-            <a href="https://ca.linkedin.com/geobrian" target="_blank"><FaLinkedinSquare size={56}/></a>
+            <a href="https://ca.linkedin.com/in/geobrian" target="_blank"><FaLinkedinSquare size={56}/></a>
           </div>
           <div className="contacts-container__contact">
             <a href="https://twitter.com/brian_bancroft" target="_blank"><FaTwitterSquare size={56}/></a>
