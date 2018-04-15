@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import FooterSpacer from '../components/FooterSpacer'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -57,6 +58,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+        <FooterSpacer />
       </div>
     )
   }
