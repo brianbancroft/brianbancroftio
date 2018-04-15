@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'brianbancroft.io',
+    author: 'Brian Bancroft',
+    description: 'Portfolio/Blog site for Brian',
+    siteUrl: 'https://brianbancroft.io/',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [

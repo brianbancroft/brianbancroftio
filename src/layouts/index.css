@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -43,4 +43,10 @@ body {
 .contacts-container__contact *:link {
   text-decoration: none;
   color: #222;
+}
+
+@media(max-width:600px) {
+  .linkset-container {
+    width: 90%;
+  }
 }

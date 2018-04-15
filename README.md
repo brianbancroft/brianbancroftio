@@ -24,7 +24,7 @@ Based off of Gatsby Starter Blog. Procrastination from actually writing copy.
 
 
 ## Running
-- Run `yarn`
+- First, get the packages -> `yarn`
 - Run in develop -> `gatsby develop`
 - Build -> `gatsby build`
 - Serve -> `gatsby serve`
