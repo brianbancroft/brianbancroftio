@@ -9,7 +9,6 @@ const LinkContainer = styled.div`
   background: white;
   height: 90px;
   width: 90px;
-  background: #666;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -20,7 +19,7 @@ const LinkContainer = styled.div`
 const TextContainer = styled.div`
   text-transform: uppercase;
   font-size: 12px;
-  color: #aaa;
+  color: black;
 `
 
 class Footer extends React.Component {

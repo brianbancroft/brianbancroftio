@@ -1,25 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+
 
 import FooterLink from './FooterLink'
-
-const FooterContainer = styled.div`
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  border-top: 1px solid #222;
-  background: white;
-`
-
-const LinkSetContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 600px;
-  background: #444;
-  margin: 0 auto;
-`
 
 class Footer extends React.Component {
   render() {
@@ -49,11 +32,11 @@ class Footer extends React.Component {
     )
 
     return (
-      <FooterContainer>
-        <LinkSetContainer>
+      <div className="footer-container">
+        <div className="linkset-container">
           {linkItemContent}
-        </LinkSetContainer>
-      </FooterContainer>
+        </div>
+      </div>
     )
   }
 }

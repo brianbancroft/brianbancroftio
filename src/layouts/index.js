@@ -4,6 +4,8 @@ import { Container } from 'react-responsive-grid'
 import Footer from '../components/footer'
 
 import { rhythm, scale } from '../utils/typography'
+import './index.css'
+
 
 class Template extends React.Component {
   render() {
@@ -32,7 +34,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Brian Bancroft
           </Link>
         </h1>
       )
@@ -53,7 +55,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Brian Bancroft
           </Link>
         </h3>
       )
