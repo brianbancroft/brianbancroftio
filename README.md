@@ -9,12 +9,12 @@ Based off of Gatsby Starter Blog. Procrastination from actually writing copy.
 - I don't do enough with GraphQL. Separating the default queries into two different packages was an interesting experiment (which worked)
 
 ## What remains
-- [ ] CSS Grid for Blog Posts
+- [x] Image layout for blog posts
 - [ ] Try to integrate the [Responsive Grid of Hexagons](https://github.com/web-tiki/responsive-grid-of-hexagons) into the portfolio page
-- [ ] Bottom linking in the blog/portfolio
-    - [ ] IF no newer article, go to twitter to see me rant?
-    - [ ] If no newer portfolio piece, go to stumbleupon
-    - [ ] Link to portfolio/blog in centre of bottom-links.
+- [x] Bottom linking in the blog/portfolio (issue fixed, hiding content for simplicity)
+    - [x] IF no newer article, go to twitter to see me rant?
+    - [x] If no newer portfolio piece, go to stumbleupon
+    - [x] Link to portfolio/blog in centre of bottom-links.
 - [ ] Clean up all stateless components.
 - [ ] Chose a different typeface for the following:
     - [ ] Blog Posts
