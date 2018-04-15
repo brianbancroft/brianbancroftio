@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 
 import { rhythm, scale } from '../utils/typography'
 import './index.css'
+import FooterSpacer from '../components/FooterSpacer'
 
 
 class Template extends React.Component {
