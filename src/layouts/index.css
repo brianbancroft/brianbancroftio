@@ -50,3 +50,21 @@ body {
     width: 90%;
   }
 }
+
+@media(max-width: 350px) {
+  h1 {
+    font-size: 3.55285rem !important;
+    line-height: 2.675rem !important;
+    margin-bottom:1.625rem !important;
+    margin-top: 0px !important;
+  }
+  .linkset-container {
+    width: 90%;
+  }
+  .link-container {
+    width: 80px;
+  }
+  .link-container__link-image {
+    max-width: 100%;
+  }
+}

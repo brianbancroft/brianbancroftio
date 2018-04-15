@@ -12,14 +12,14 @@ class Index extends React.Component {
 
     return (
       <div>
-        <h1>Howdy!</h1>
-        <p>I am Brian Bancroft, a generalist. I'm currently employed as a fullstack developer with <a href="https://careerjsm.com/">@careerjsm</a>. I work/play in the following:</p>
+        <h2>Howdy!</h2>
+        <p>I am Brian Bancroft, a generalist. I'm currently employed as a fullstack developer with <a href="https://careerjsm.com/" target="_blank">@careerjsm</a>. I work/play in the following:</p>
         <ul>
-          <li>Ruby (and Rails)</li>
-          <li>Node (Express and Koa)</li>
-          <li>JS (React, Vue and Ember)</li>
-          <li>Mapping (ArcGIS and QGIS)</li>
-          <li>Analysis (R and Python)</li>
+          <li style={{marginBottom: '5px'}}>Ruby (and Rails)</li>
+          <li style={{marginBottom: '5px'}}>Node (Express and Koa)</li>
+          <li style={{marginBottom: '5px'}}>JS (Ember, Vue and React)</li>
+          <li style={{marginBottom: '5px'}}>Mapping (ArcGIS and QGIS)</li>
+          <li style={{marginBottom: '5px'}}>Analysis (R and Python)</li>
         </ul>
       </div>
     )

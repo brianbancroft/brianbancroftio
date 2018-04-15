@@ -20,6 +20,7 @@ class Footer extends React.Component {
         <div className="link-container">
           <IconContainer>
             <img
+              className="link-container__link-image"
               src={props.iconLink}
               alt={props.title}
             />
