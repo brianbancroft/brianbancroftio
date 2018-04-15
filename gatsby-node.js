@@ -8,6 +8,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const portfolioPost = path.resolve('./src/templates/portfolio-post.js')
     resolve(
       graphql(
         `
@@ -34,14 +35,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
+        const selectedComponent = slug => slug.match(/^\/portfolio\//) ? portfolioPost : blogPost
 
         _.each(posts, (post, index) => {
           const previous = index === posts.length - 1 ? false : posts[index + 1].node;
           const next = index === 0 ? false : posts[index - 1].node;
 
+
           createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: selectedComponent(post.node.fields.slug),
             context: {
               slug: post.node.fields.slug,
               previous,

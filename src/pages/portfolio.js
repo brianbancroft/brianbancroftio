@@ -9,12 +9,13 @@ import { rhythm } from '../utils/typography'
 class PortfolioIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const portfolioItems = get(this, 'props.data.allMarkdownRemark.edges')
+    console.warn(this.props)
 
     return (
       <div>
         <Helmet title={siteTitle} />
-        {posts.map(({ node }) => {
+        {portfolioItems.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -32,7 +33,6 @@ class PortfolioIndex extends React.Component {
             </div>
           )
         })}
-
       </div>
     )
   }

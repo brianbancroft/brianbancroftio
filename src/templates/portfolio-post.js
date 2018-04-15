@@ -50,6 +50,10 @@ class PortfolioPieceTemplate extends React.Component {
             </li>
           )}
 
+          <li>
+            <Link to="/portfolio"> - Portfolio - </Link>
+          </li>
+
           {next && (
             <li>
               <Link to={next.fields.slug} rel="next">
