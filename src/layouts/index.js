@@ -53,11 +53,12 @@ class Template extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
+              textTransform: 'uppercase',
               color: 'inherit',
             }}
             to={'/'}
           >
-            Brian Bancroft
+            Brian Bancroft - {location.pathname.split('/')[1]}
           </Link>
         </h3>
       )

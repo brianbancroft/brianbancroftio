@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
 
     const BlogItem = props => {
     return (
-      <Link style={{ boxShadow: 'none', color: '#444'}} to={props.node.fields.slug}>
+      <Link style={{ boxShadow: 'none', color: '#444'}} to={props.node.fields.slug} >
         <div key={props.node.fields.slug} className="blogposts-container__blogpost" style={{backgroundImage: `url(${props.node.fields.preview || defaultPreview})`, backgroundSize: 'cover'}}>
           <div className="blogpost-title">
               {props.title}
@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
     return (
       <div className="blogposts-container">
         <Helmet title={siteTitle} />
-        {posts.map(({ node }) => <BlogItem title={title(node)} node={node} /> )}
+        {posts.map(({ node }) => <BlogItem title={title(node)} node={node} key={node.fields.slug}/> )}
       </div>
     )
   }
