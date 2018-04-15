@@ -1,6 +1,7 @@
 ---
 title: Blog Article 1
 date: "2015-05-01T22:12:03.284Z"
+preview: https://placekitten.com/g/300/80.png
 ---
 
 

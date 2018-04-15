@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -12,25 +11,24 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     const title = node => get(node, 'frontmatter.title') || node.fields.slug
+    const defaultPreview = 'http://via.placeholder.com/300x80.png'
 
-    const BlogItem = props =>
-      <div key={props.node.fields.slug}>
-        <h3
-          style={{
-            marginBottom: rhythm(1 / 4),
-          }}
-        >
-          <Link style={{ boxShadow: 'none' }} to={props.node.fields.slug}>
-            {props.title}
-          </Link>
-        </h3>
-        <small>{props.node.frontmatter.date}</small>
-        <p dangerouslySetInnerHTML={{ __html: props.node.excerpt }} />
-      </div>
-
+    const BlogItem = props => {
+    return (
+      <Link style={{ boxShadow: 'none', color: '#444'}} to={props.node.fields.slug}>
+        <div key={props.node.fields.slug} className="blogposts-container__blogpost" style={{backgroundImage: `url(${props.node.fields.preview || defaultPreview})`, backgroundSize: 'cover'}}>
+          <div className="blogpost-title">
+              {props.title}
+          </div>
+          <div className="date-container" style={{textAlign: 'right', marginRight: '10px'}}>
+            <small>{props.node.frontmatter.date}</small>
+          </div>
+        </div>
+      </Link>
+    )}
 
     return (
-      <div>
+      <div className="blogposts-container">
         <Helmet title={siteTitle} />
         {posts.map(({ node }) => <BlogItem title={title(node)} node={node} /> )}
       </div>
@@ -60,6 +58,7 @@ export const postsPageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            preview
           }
         }
       }
