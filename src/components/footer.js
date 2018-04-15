@@ -11,24 +11,28 @@ class Footer extends React.Component {
       {
         iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/monitor.svg',
         location: '/',
-        title: 'home'
+        title: 'home',
+        key: 1
       }, {
         iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/image.svg',
         location: '/portfolio',
-        title: 'portfolio'
+        title: 'portfolio',
+        key: 2
       }, {
         iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/idea.svg',
         location: '/posts',
-        title: 'posts'
+        title: 'posts',
+        key: 3
       }, {
         iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/chat.svg',
         location: '/contact',
-        title: 'contact'
+        title: 'contact',
+        key: 4
       }
     ]
 
     const linkItemContent = footerLinks.map(i =>
-      <FooterLink iconLink={i.iconLink} location={i.location} title={i.title} />
+      <FooterLink key={i.key} iconLink={i.iconLink} location={i.location} title={i.title} />
     )
 
     return (
