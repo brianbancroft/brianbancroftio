@@ -100,7 +100,7 @@ class PortfolioIndex extends React.Component {
     return (
       <div style={{marginTop: '70px'}}>
         <Helmet title={siteTitle} />
-        <ul id="categories" className="clr">
+        <ul id="hexGrid" className="clr">
           {portfolioGallery(portfolioItems)}
         </ul>
       </div>
