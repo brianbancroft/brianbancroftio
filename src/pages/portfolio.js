@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 class PortfolioIndex extends React.Component {
-  render() {
+   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const portfolioItems = get(this, 'props.data.allMarkdownRemark.edges')
 
@@ -87,20 +87,22 @@ class PortfolioIndex extends React.Component {
     const portfolioItem = i => {
       const title = get(i, 'node.frontmatter.title') || i.node.fields.slug
       return (
-        <Link style={{ boxShadow: 'none' }} key={i.node.fields.slug} to={i.node.fields.slug}>
-          <li>
-            <div style={{backgroundImage: `url(${i.node.frontmatter.preview})`}}>
-              <h4 className="hex-title">{title}</h4>
-            </div>
-          </li>
-        </Link>
+        <li
+          key={i.node.fields.slug}
+          onClick={ () => navigateTo(i.node.fields.slug)}
+          style={{cursor: 'pointer'}}
+        >
+          <div style={{backgroundImage: `url(${i.node.frontmatter.preview})`}}>
+            <h4 className="hex-title">{title}</h4>
+          </div>
+        </li>
       )
     }
 
     return (
       <div style={{marginTop: '70px'}}>
         <Helmet title={siteTitle} />
-        <ul id="hexGrid" className="clr">
+        <ul id="categories" className="clr">
           {portfolioGallery(portfolioItems)}
         </ul>
       </div>
