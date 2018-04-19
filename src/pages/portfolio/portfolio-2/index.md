@@ -1,9 +1,19 @@
 ---
-title: Portfolio Item 2
-date: "2015-05-01T22:12:03.284Z"
-headerImage: 'http://placehold.it/900x200.png'
-preview: https://placekitten.com/300/300
+title: Gey My MP
+date: "2016-04-12T22:12:03.284Z"
+headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp.png
+preview: http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/SchulteDeb_Lib.jpg
 ---
 
-# Hello World!
-This is going to be a placeholder for a little bit. Eventually I will transfer all my portfolio content here.
+<p class="intro"><span class="dropcap">A</span>dmission time: I did a development bootcamp. The following is the final project which I conducted with <a href="http://kristincheverie.com/">Kristian Cheverie</a> and <a href="https://www.linkedin.com/in/ajit-chandi-14507273/">Ajit Chandi</a>.</p>
+
+The concept of this app was threefold:
+
+  1. We needed a scraper that would take pull data from the Parliament of Canada website to populate this site,
+  2. We needed a easy-to-access site that would allow everyone to know more about their elected officials; and,
+  3. We needed a separate back-end app which would be the API that makes this site fast and agile.
+
+  I advised on the first, offered troubleshooting on the second for mapping, and developped the third.
+
+The site has not been updated since its original creation, but is live below:
+# <span style="margin-left:28%;">-- <a href="https://getmymp.github.io">Live Site</a> --</span>
