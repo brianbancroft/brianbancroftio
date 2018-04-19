@@ -38,17 +38,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         const selectedComponent = slug => slug.match(/^\/portfolio\//) ? portfolioPost : blogPost
 
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? false : posts[index + 1].node;
-          const next = index === 0 ? false : posts[index - 1].node;
-
+          // const previous = index === posts.length - 1 ? false : posts[index + 1].node;
+          // const next = index === 0 ? false : posts[index - 1].node;
 
           createPage({
             path: post.node.fields.slug,
             component: selectedComponent(post.node.fields.slug),
             context: {
               slug: post.node.fields.slug,
-              previous,
-              next,
+              // previous,
+              // next,
             },
           })
         })
