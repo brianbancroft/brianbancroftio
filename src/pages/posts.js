@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     const title = node => get(node, 'frontmatter.title') || node.fields.slug
-    const defaultPreview = 'http://via.placeholder.com/300x80.png'
+    const defaultPreview = 'https://s3.amazonaws.com/cdn.brianbancroft.io/assets/blogitem.jpg'
 
     const BlogItem = props => {
     return (

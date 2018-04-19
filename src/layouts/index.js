@@ -58,7 +58,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Brian Bancroft - {location.pathname.split('/')[1]}
+            Brian Bancroft
           </Link>
         </h3>
       )
