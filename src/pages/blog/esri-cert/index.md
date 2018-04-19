@@ -1,8 +1,8 @@
 ---
-title:  "Public Speaking and Writing - An example"
+title:  "Esri Desktop Software Certification"
 date: "2016-04-12T22:12:03.284Z"
-headerImage: 'http://placehold.it/900x200.png'
-preview: https://placekitten.com/300/80
+# headerImage: 'http://placehold.it/900x200.png'
+# preview: https://placekitten.com/300/80
 ---
 
 I have a bit I need to write about in the technical sphere. Hopefully I can offer it here!

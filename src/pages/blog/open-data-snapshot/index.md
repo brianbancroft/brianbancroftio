@@ -1,8 +1,8 @@
 ---
 title:  "A Snapshot of Open Data in Canada"
-date: "2017-01-1T22:12:03.284Z"
-headerImage: 'http://placehold.it/900x200.png'
-preview: https://placekitten.com/300/80
+date: "2017-01-14T22:12:03.284Z"
+# headerImage: 'http://placehold.it/900x200.png'
+# preview: https://placekitten.com/300/80
 
 ---
 
