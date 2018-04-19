@@ -20,6 +20,11 @@ Based off of Gatsby Starter Blog. Procrastination from actually writing copy.
     - [ ] Blog Posts
     - [ ] Portfolio Pieces
     - [ ] Remainder of the site
+- [ ] Clean circleCI Yaml for clarity
+- [ ] Linting
+    - [ ] ESLint
+    - [ ] Prettier
+    - [ ] Integrate lint checks into CircleCI
 
 
 
