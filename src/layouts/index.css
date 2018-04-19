@@ -186,7 +186,7 @@ body {
 #categories li h4{
   bottom:110%;
   font-weight:500;
-  font-size:1.2em;
+  font-size:1em;
   width: 100%;
   padding-top:100%;
   padding-bottom:100%;
@@ -212,7 +212,7 @@ body {
 
 #categories li div:hover h4 {
   bottom:0%;
-  padding-bottom:50%;
+  padding-bottom:55%;
 }
 
 #categories li div:hover p{
