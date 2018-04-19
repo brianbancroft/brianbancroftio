@@ -5,9 +5,6 @@ headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/topomap-closeu
 preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/topomap-closeup.png
 ---
 
-
-
-
 Why?
 ---
 

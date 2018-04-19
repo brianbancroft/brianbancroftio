@@ -5,10 +5,11 @@ headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/condobee-popup
 preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/condobee-popup.jpg
 ---
 ![](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/condobee-home.jpg)
+
 Why
 ---
 
-Ny first commerial project. A combination of many factors taken under mentorship with [David Krett](http://w2d.co/).
+Condobees was my first contract. I wasn't in charge of the high-level design but instead a large portion of its implementation. This project was done under the supervision of [David Krett](http://w2d.co/), who also caried out a large portion of the back-end.
 
 - A User interface that allows individuals to look through pre-construction condos
 - Users could also download a procedurally-generated document
