@@ -10,7 +10,7 @@ Based off of Gatsby Starter Blog. Procrastination from actually writing copy.
 
 ## What remains
 - [x] Image layout for blog posts
-- [ ] Try to integrate the [Responsive Grid of Hexagons](https://github.com/web-tiki/responsive-grid-of-hexagons) into the portfolio page
+- [x] Try to integrate the [Responsive Grid of Hexagons](https://github.com/web-tiki/responsive-grid-of-hexagons) into the portfolio page
 - [x] Bottom linking in the blog/portfolio (issue fixed, hiding content for simplicity)
     - [x] IF no newer article, go to twitter to see me rant?
     - [x] If no newer portfolio piece, go to stumbleupon
