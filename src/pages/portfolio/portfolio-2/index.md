@@ -7,6 +7,8 @@ preview: http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/Schul
 
 <p class="intro"><span class="dropcap">A</span>dmission time: I did a development bootcamp. The following is the final project which I conducted with <a href="http://kristincheverie.com/">Kristian Cheverie</a> and <a href="https://www.linkedin.com/in/ajit-chandi-14507273/">Ajit Chandi</a>.</p>
 
+![GetMyMp](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp.png)
+
 The concept of this app was threefold:
 
   1. We needed a scraper that would take pull data from the Parliament of Canada website to populate this site,
@@ -15,5 +17,8 @@ The concept of this app was threefold:
 
   I advised on the first, offered troubleshooting on the second for mapping, and developped the third.
 
-The site has not been updated since its original creation, but is live below:
-# <span style="margin-left:28%;">-- <a href="https://getmymp.github.io">Live Site</a> --</span>
+![With Map](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp-map.jpg)
+
+Source Code
+---
+While this site is no longer maintained, the source code can be found [here](https://github.com/getmymp)
