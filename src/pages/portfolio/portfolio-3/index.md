@@ -1,5 +1,5 @@
 ---
-title: Condobees
+title: Vue UI
 date: "2017-01-15T22:12:03.284Z"
 headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/condobee-popup.jpg
 preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/condobee-popup.jpg
@@ -31,5 +31,5 @@ This project had me work in the following areas:
 
 This was my first crack at Rails and VueJS, and needs a significant design overhaul. I feel that the UI is decent, but there are elements that could stand to be so much better. Since then, I've learned how to carry out e2e testing using selenium, as well as creating better tests in Minispec, RSpec (my preferred choice), and Mocha.
 
-## Sites
+## Site
   [Condobees](http://condobees.com)

@@ -2,7 +2,7 @@
 title: Gey My MP
 date: "2016-04-12T22:12:03.284Z"
 headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp.png
-preview: http://www.parl.gc.ca/Parliamentarians/Images/OfficialMPPhotos/42/SchulteDeb_Lib.jpg
+preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp-intro.jpg
 ---
 
 <p class="intro"><span class="dropcap">A</span>dmission time: I did a development bootcamp. The following is the final project which I conducted with <a href="http://kristincheverie.com/">Kristian Cheverie</a> and <a href="https://www.linkedin.com/in/ajit-chandi-14507273/">Ajit Chandi</a>.</p>
