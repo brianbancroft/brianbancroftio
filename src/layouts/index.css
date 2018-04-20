@@ -2,6 +2,10 @@ body {
   color: #222;
 }
 
+li {
+  margin-bottom: 0.1rem !important;
+}
+
 .footer-container {
   position: fixed;
   bottom: 0;
