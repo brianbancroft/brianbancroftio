@@ -9,22 +9,22 @@ class Footer extends React.Component {
 
     const footerLinks = [
       {
-        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/monitor.svg',
+        iconLink: 'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/monitor.svg',
         location: '/',
         title: 'home',
         key: 1
       }, {
-        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/image.svg',
+        iconLink: 'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/image.svg',
         location: '/portfolio',
         title: 'portfolio',
         key: 2
       }, {
-        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/idea.svg',
+        iconLink: 'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/idea.svg',
         location: '/posts',
         title: 'posts',
         key: 3
       }, {
-        iconLink: 'https://s3.amazonaws.com/cdn.brianbancroft.io/images/portfolio-site/footer-icons/chat.svg',
+        iconLink: 'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/chat.svg',
         location: '/contact',
         title: 'contact',
         key: 4
