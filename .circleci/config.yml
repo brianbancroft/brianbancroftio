@@ -36,7 +36,28 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn lint
-      - run: yarn build && aws s3 sync public/ s3://brianbancroft.io --delete
+      - run:
+          name: Linting
+          command: 'yarn lint'
+      - run:
+          name: Building
+          command: 'yarn build'
+      # - run: aws s3 sync public/ s3://brianbancroft.io --delete
+  deploy:
+    requires:
+        - build
+    filters:
+      branches:
+        only: master
+    docker:
+        - image: circleci/node:9.10
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+         at: ~/repo
+      - run:
+          name: Deploy
+          command: 'aws s3 sync public/ s3://brianbancroft.io --delete'
+
 
 
