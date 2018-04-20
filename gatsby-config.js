@@ -7,9 +7,9 @@ module.exports = {
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
-    {
-      resolve: `gatsby-plugin-feed`,
-    },
+    // {
+    //   resolve: `gatsby-plugin-feed`,
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
