@@ -12,7 +12,7 @@ The truth is that Canadian topographic maps aren't the best, especially far away
 
 As a result, updated topographic maps become a necessity. To illustrate, here's a map from the Open Data series offered by Canada. It was published in 1982:
 <figure>
-	<img src="{{ '/assets/img/canvec-grab.png' | prepend: site.baseurl }}" alt="">
+	<img src="https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/canvec-grab.png" alt="">
 	<figcaption>This thing is older than me!</figcaption>
 </figure>
 
@@ -43,4 +43,4 @@ Since creating this map, I broke this back into greyscale. I learned here that m
 
 [The finished product](https://cdn.brianbancroft.io/assets/portfolio-items/bc_topographic_map.pdf)
 
-[A closer look]: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png
+[A closer look]: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/topomap-closeup.png

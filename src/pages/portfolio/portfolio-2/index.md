@@ -7,7 +7,7 @@ preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/g
 
 <p class="intro"><span class="dropcap">A</span>dmission time: I did a development bootcamp. The following is the final project which I conducted with <a href="http://kristincheverie.com/">Kristin Cheverie</a> and <a href="https://www.linkedin.com/in/ajit-chandi-14507273/">Ajit Chandi</a>.</p>
 
-![GetMyMp](https://cdn.brianbancroft.io/images/portfolio/getmymp/getmymp.png)
+![GetMyMp](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp.png)
 
 The concept of this app was threefold:
 
