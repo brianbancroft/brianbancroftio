@@ -1,8 +1,8 @@
 ---
 title: Topo Map
 date: "2016-12-24T22:12:03.284Z"
-headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/topomap-closeup.png
-preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/topomap-closeup.png
+headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png
 ---
 
 Why?
@@ -41,6 +41,6 @@ For forest cover, I used commercial RapidEye data from [Apollo Mapping](https://
 
 Since creating this map, I broke this back into greyscale. I learned here that making content in greyscale, then transitioning to colour makes all the colour choices make that much less "out of place"
 
-[The finished product](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/bc_topographic_map.pdf)
+[The finished product](https://cdn.brianbancroft.io/assets/portfolio-items/bc_topographic_map.pdf)
 
-[A closer look]: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/topomap-closeup.png
+[A closer look]: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png

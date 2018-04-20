@@ -1,13 +1,13 @@
 ---
 title: Gey My MP
 date: "2016-04-12T22:12:03.284Z"
-headerImage: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp.png
-preview: https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp-intro.jpg
+headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp-intro.jpg
 ---
 
 <p class="intro"><span class="dropcap">A</span>dmission time: I did a development bootcamp. The following is the final project which I conducted with <a href="http://kristincheverie.com/">Kristin Cheverie</a> and <a href="https://www.linkedin.com/in/ajit-chandi-14507273/">Ajit Chandi</a>.</p>
 
-![GetMyMp](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp.png)
+![GetMyMp](https://cdn.brianbancroft.io/images/portfolio/getmymp/getmymp.png)
 
 The concept of this app was threefold:
 
@@ -17,7 +17,7 @@ The concept of this app was threefold:
 
   I advised on the first, offered troubleshooting on the second for mapping, and developped the third.
 
-![With Map](https://s3.amazonaws.com/cdn.brianbancroft.io/assets/getmymp-map.jpg)
+![With Map](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp-map.jpg)
 
 Source Code
 ---
