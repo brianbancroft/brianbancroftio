@@ -1,8 +1,8 @@
 ---
 title: Topo Map
 date: "2016-12-24T22:12:03.284Z"
-headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topomap-closeup.png
+headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/topomap-closeup.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/topomap-closeup.png
 ---
 
 Why?
