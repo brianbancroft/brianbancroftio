@@ -12,7 +12,7 @@ class Index extends React.Component {
     return (
       <div>
         <h2>Howdy!</h2>
-        <p>I am Brian Bancroft, a generalist. I'm currently employed as a <em>intermediate software developer</em> with <strong><a href="https://careerjsm.com/" target="_blank" style={{textDecoration: 'none'}}>@careerjsm</a></strong>. I work/play in the following:</p>
+        <p>I am Brian Bancroft, a generalist. I'm currently employed as a <em>intermediate software developer</em>. I work/play in the following:</p>
         <ul>
           <li style={{marginBottom: '5px'}}>Ruby (and Rails)</li>
           <li style={{marginBottom: '5px'}}>Node (Express and Koa)</li>

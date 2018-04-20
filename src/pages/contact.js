@@ -37,9 +37,11 @@ class Contact extends React.Component {
     return (
       <div>
         <h2>Get in Touch!</h2>
-        <p>Feel free to get in touch any time you have a question or problem that needs solving</p>
-          <div className="contacts-container">
-            {linkList}
+        <p>
+          Feel free to get in touch any time you have a question or problem that needs solving. My general resume is also available <a href="https://1drv.ms/b/s!AtUlz8vZ_1DKgvdqvt7f6KMH9QlrhQ">here</a>.
+        </p>
+        <div className="contacts-container">
+          {linkList}
         </div>
       </div>
     )
