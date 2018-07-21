@@ -32,22 +32,30 @@ li {
   justify-content: center;
 }
 
+.contacts-container__contact a {
+  color: #444;
+}
+
+.contacts-container__contact a:hover {
+  color: blue;
+}
+
 .contacts-container {
   display: flex;
   justify-content: space-around;
 }
 
 .contacts-container__contact {
-  color: #222;
+  /* color: #222; */
 }
 
 .contacts-container__contact *,
-.contacts-container__contact *:hover,
 .contacts-container__contact *:visited,
 .contacts-container__contact *:link {
   text-decoration: none;
-  color: #222;
 }
+
+
 
 .blogposts-container {
   margin-top: 50px;
