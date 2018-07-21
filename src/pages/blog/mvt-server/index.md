@@ -1,13 +1,34 @@
 ---
-title:  "Building an MVT Server using Tegola, AWS and PostGIS"
-date: "2018-07-04T22:12:03.284Z"
+title:  "Building an MVT Server using Tegola"
+date: "2018-07-21T22:12:03.284Z"
 ---
 
-## Intro
+[Jump to the start](#Intro)
+
+---
+
+## Before we Start...
+This is a tutorial. You're going to run into troubles.
+If you try to do this, you might get angry,
+ and want to flip the table.
+
+If you're feeling that way, start the timer.
+Try to push through the snag _within 20 minutes_.
+If you can't, try to reach out. You can do this of one of two ways:
+- @ me in twitter, I'm [@brian_bancroft](https://twitter.com/brian_bancroft)
+- @ me in slack. I'm in [The spatial community](https://thespatialcommunity.org)
+  - go to #webdev, and @ me.
+  - My handle is _@brian_
+
+If you're going to try to do this, I'm here for you. I might not be there right away, but _I will get back to you_. We're going to make this work together.
+
+---
+
+# Intro
 
 ArcGIS Server, Mapbox Studio, GeoServer, MapServer. These are all fantastic heavyweight contenders that help you serve layers of data, but what if you just wanted something that would serve a handful of Mapbox Vector Tiles (MVT) layers without all of the other million-and-one things they offer? Good news!
 
-![Good news.gif]()
+<iframe src="https://giphy.com/embed/3TvLcFwspzh5e" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3TvLcFwspzh5e">via GIPHY</a></p>
 
 _The open source world has you covered..._ There are currently at least three server applications which will let you do the think you want to do. Here, we're going to take use Tegola, a server application built on the Go language. This tutorial is build specifically for those who use Mac.
 
@@ -28,73 +49,220 @@ Once you have both items downloaded, we can move on to setting up the DB.
 ### Setting up the DB
 Here, you're going to want to setup PostGIS, _then_ upload the data. This tutorial skips all the setup details of a Postgres database. Once you've figured all that out, you're going to want to start from the command line:
 
-```
-psql
+```sh
+  psql
 ```
 Once in, you're going to want to create a new DB:
-```
-CREATE DATABASE scratch;
+
+```sql
+  CREATE DATABASE scratch;
 ```
 Okay. If that works, we can exit...
 
-```
-\q
+```sql
+  \q
 ```
 ...Only to go back in again...
-```
-psql scratch
+```sh
+  psql scratch
 ```
 Once in, you're going to want to create the postgis extension. This should work without any special installs on postgres.app and most other postgres installs:
-```
-CREATE EXTENSION postgis;
+
+```sql
+  CREATE EXTENSION postgis;
 ```
 
 If you see the following:
-```
-CREATE EXTENSION
-Time: 1795.743 ms (00:01.796)
+```sql
+  CREATE EXTENSION
+  Time: 1795.743 ms (00:01.796)
 ```
 You're good to `\q` and get out of there.
 
 Now it's just a matter of importing the data. Assuming you're in the same directory as the dump file you just downloaded, carry out the following:
 
-```
-psql scratch < ottawa_wards.sql
+```sh
+  psql scratch < ottawa_wards.sql
 ```
 
 This should take a few seconds. Once done, you can check your records through your favorite GIS program (QGIS) or through psql. Running a length query like the following should yield about 23 rows:
 
-```
-SELECT count(*) FROM "ottawa-wards";
+```sql
+  SELECT count(*) FROM "ottawa-wards";
 ```
 
 At this point, your DB is set. Good job, time to move on...
 
-### Get The Server
+### Get Tegola
 
-- Download Tegola for Mac
-- Install Postgres.app
-
+In order to run a MVT server like Tegola, you need to [download](https://tegola.io/404) the software first. Download it, and place the application in a folder...
 
 ### Build a query
-- Go into PostGIS.
-- Enable Extension PostGIS
-- Import Data
-- Do a basic query
-- Do a tegola-style query
+Now we have to build a query that will work for us. It needs to have an id, a geometry column, and some quantitative data and labels. To save time (to make up for the setup-fatigue you've probably just felt), I've built this query:
+
+```sql
+    SELECT
+      ST_AsBinary(ST_Simplify(geo.geom, 0, false))
+        AS wkb_geometry,
+      geo.id
+        AS id,
+      "DESCRIPTIO"
+        AS description,
+      "WARD_NUM"::INTEGER
+        AS ward_num,
+      "NAME"
+        AS numeric_name,
+      "WARD_EN"
+        AS desc_name,
+      "COUNCILLOR"
+        AS councillor
+    FROM "ottawa-wards"
+      AS geo
+```
+
+From this table, we're selecting a subset of the columns. We're casting these columns under a grab-bag of aliases. This is so that we're able to access the data behind these variables just a little bit easier. Notice that we're also casting one of the variables as an integer. This is required if we want to use a text field in populating a dataviz tool for a JS-based mapping library for purposes such as choropleths.
+
+Run this query. Make sure you're getting some data back. If you are, you can move forward.
+
 
 ### Setup Tegola
-- Start the config.toml file
-- Start the server
-- Test the server using Curl.
+If you're still here, this is good. We can now get on the fun stuff: Setting up the server! In the same directory which you have Tegola (make sure it's accessable by the command line), we're going to start a configuration file. Call it `config.toml`, and make it blank for now.
+
+```
+A side note: TOML is _"Tom's Markup Language"_. Another yaml/json/config file
+```
+
+#### A TOML Breakdown:
+First, comes the `webserver` config. We want to configure the port:
+```toml
+[[webserver]]
+port = ":8080"
+```
+This is the web access protocol. If you're interested in learning more about it, you can check out [this tutorial](https://http.cat/404).
+
+Next, we need to setup the list of `providers`
+
+```toml
+  [[providers]]
+    name = "scratch"
+    type = "postgis"
+    host = "localhost"
+    port = 5432
+    database = "scratch"
+    user = "brianbancroft"
+    password = ""
+    srid = 4326
+```
+
+Here, we have one provider: One for a PostGIS database. There are many other ways you can play with this. Be advised that you're going to have to *change the username*. Now that we have the db, let's go down to the _layers_ and _map_ levels:
+
+```toml
+  [[providers.layers]]
+    name = "ottawa_wards"
+    geometry_fieldname = "geom"
+    id_fieldname = "id"
+    # TODO: Same issue: Get the geometry dumbing down using the exponential function
+    sql = """
+      <The SQL Query goes here. [Full toml here.](https://http.cat/404)>
+    """
+```
+
+```toml
+  [[maps]]
+  name = "ottawa_wards"
+    [[maps.layers]]
+    provider_layer = "scratch.ottawa_wards"
+    min_zoom = 7
+    max_zoom = 20
+```
+
+This is the bare-minimum you need to get a single layer displaying using Tegola. Now that you see the components, [grab the entire file here](https://http.cat/404), and replace the username with your DB username. Now we're ready to start the *server!*
+
+![excited dog.gif](https://http.cat/404)
+
+We're ready to start the server now! In the mac environment, we carry out the following:
+
+```sh
+  SQL_DEBUG=EXECUTE_SQL ./tegola serve --config=config.toml
+```
+
+Once started, we want to test the connection. Open up Postman, curl, and try to connect with the following site:
+
+```
+  http://localhost:8080/#8.79/45.2737/-75.7117
+```
+
+In a browser, you should see the following:
+
+![Tegola should work now](./tegola-test.png)
+
+We have a working server now, but it's never enough just to have a server. We also need a client. For the next part, let's quickly build a map!
+
 
 ### Use a service that takes advantage of it
-- Write a basic mapbox GL tutorial map with a basic lines basemap using openmaptiles
--
+Okay. This is a Tegola tutorial, but we should build a client that makes use of the server. We're going to use MapboxGL as it is my personal fav as far as JS-based mapping libraries. For now, you don't need to change anything here, but these are things which you're going to want to know for when we swap to deploying this live on AWS:
+
+```
+  Fun fact: You can use Mapbox GL JS without any mapbox services.
+  For this tutorial, we will use
+  [Openmaptiles](https://http.cat/404) to build map tiles.
+```
+
+The repo for the simple client is **GET A REPO GOING**.
+
+Have a look at the index.js if you get a moment. I'm going to show just a couple of things:
+1. How to use a third-party basemap provider
+2. How to use your tegola layer
+
+#### Third-party basemap provider
+
+If you look at lines 3-8 of `index.js`, you'll find the following block:
+
+```js
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'https://openmaptiles.github.io/positron-gl-style/style-cdn.json',
+    center: [-75.6590,45.3971],
+    zoom: 9
+  });
+```
+
+You can set your style here to a json file. These files are usually crunched through applications such as [`maputnik`](https://http.cat/404)
+
+#### Tegola Source
+Between lines 14-18 (and line 11), you can see the following:
+```js
+  const instance = 'http://localhost:8080'
+
+  (...)
+
+  map.addSource('tracts', {
+    type: 'vector',
+    tiles: [`${instance}/maps/ottawa_wards/{z}/{x}/{y}.vector.pbf?`],
+    tolerance: 0
+  });
+```
+
+This is where we're setting up what goes to tegola. The _x_ and _y_ coordinates dictate the centre of the view, and the _z_ indicates the zoom-level.
+
+- Serve locally
+
+
+(this needs to be carved into part 2)
+
 
 ## Start deploying
+- Overview of AWS
+- Credit card required
+- What is S3
+- What is EC2
+- What is Route 53
+- What is cloudfront
+- What is the DB service
+
 
 ### Build the DB
+-
 
 ### Build the EC2 Instance
 
@@ -103,3 +271,5 @@ At this point, your DB is set. Good job, time to move on...
 ## You're done!
 
 Congrats. You've just built your first MVT Tile Server! DB's can be pricey, but there are ways to overcome even that hurdle! The next step, if you're happy with your data, is to convert that dataset into .mbtiles format, and place it into S3.
+
+
