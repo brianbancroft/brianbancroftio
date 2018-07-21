@@ -1,22 +1,27 @@
 ---
-title:  "A Snapshot of Open Data in Canada"
-date: "2017-01-14T22:12:03.284Z"
-# headerImage: 'http://placehold.it/900x200.png'
-# preview: https://placekitten.com/300/80
-
+title:  "A List of Canadian GeoData"
+date: "2018-07-04T22:12:03.284Z"
 ---
 
-This isn’t the first attempt at throwing all the data together in one location for all of Canada. First, the Government of Canada has thrown their hat into the ring sometime ago with the [Open Government Programs in Canada Map](http://open.canada.ca/en/maps/open-data-canada) as part of their Federal Government Webpage overhaul. The map on the page is excellent at letting individuals know which parts of the country support Open Data, and it has a calendar for events. The downside is that both that it relies on user input, and the openlayers map prevents you from selecting communities which are adjacent to each other. Watch below as I fail to reach surrey in the same time it takes another user to google “Open Data Surrey”.
+# A somewhat Incomplete Journey through Open Geospatial Data of Canada and its places.
 
-<img width="981" alt="image that displays my frustration with obtaining surrey" src="https://raw.githubusercontent.com/brianbancroft/OpenCanadaGeoData/master/files/trygetsurrey.gif">
-_No that is as far as you can zoom in..._
+## Why another List of OpenGeoData?
+
+Awhile back, I read a wordy press release from an organization called the Canadian Geospatial Data Infrastructure (CGDI). It was long, and rambly, and it didn't say much about the future of data sharing in Canada.
+
+The initiative, once upon a time, spawned Geobase, a portal for geospatial information before Open Data was a hit. It has since disappeared into the night, leaving the Canadian Geospatial sector _much_ better than when it first came across it.
+
+But the article was fluff. So I decided to make this list. List most lists of links, things get out of date. But we can update them. Here's my list of updates:
+
+## A List of some Aggregators
+
+This isn’t the first attempt at throwing all the data together in one location for all of Canada. First, the Government of Canada has thrown their hat into the ring sometime ago with the [Open Government Programs in Canada Map](http://open.canada.ca/en/maps/open-data-canada) as part of their Federal Government Webpage overhaul. But it's already old: The calendar hasn't been updated since Summer 2017, and the map of links is a case example in poor user interface. _Bleh!_
 
 There are two other notable aggregators. One worth mention is [Data Libre - By Civic Access](http://datalibre.ca). It’s a blog that offers not only the data, but resources that encourage of dissemination, resources on how to use various bits of data, and examples of this data being used. The second aggregator is another global open data map that is decently-designed, but isn’t always curated. [Open Data Inception(Global)](https://opendatainception.io/).
 
 ## National-Level things!
 
-[Geogratis](https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information/free-data-geogratis/11042) - A maze of federal government data. Unlocking the ability to navigate through this site (or more recently, just using the geospatial extraction tool) unlocks all the basic data you need to start on that nice mapping project. Alternatively, learning the National Topographic System (NTS) and using this [well-curated FTP site](http://ftp.geogratis.gc.ca/pub/) is an easy way to get to the data you need.
-[Geobase] (http://geobase.ca) - This was once a multi-agency organization that assembled, and maintained various national-level datasets. As Geogratis stepped up [(real source for Geobase Data)](http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/$categories?scheme=&q=Geobase), it's become less clear what GeoBase provisions.
+[Topographic Information](https://www.nrcan.gc.ca/earth-sciences/geography/topographic-information) - Once upon a time, there was geogratis. It was decent at holding geospatial information, but it was hard to navagate. But in the last couple of years, the federal government has iterated, and provided a decent geospatial product index, and geospatial extraction tool!
 
 ## At the province and below!
 At this point, we should all know that Canada is but a federation of provinces that play their own game according to their own situation. As a result, there are provinces which are very open about their data (BC and Ontario), there are provinces that are using it to support both community and industry (Alberta), there are provinces that are starting, holding off, or walking away from the open data game. Here's a list of all the provinces and their data holdings:
@@ -35,7 +40,7 @@ Unlike other large cities, Victoria and Vancouver aren't amalgamated. This means
   * [Cowichan Valley](http://www.cvrd.bc.ca/2024/Geospatial-Data)
   * [North Cowichan](http://data.northcowichan.ca/)
   * [Capital Regional District](https://www.crd.bc.ca/about/data)
-  * [Victoria](http://www.victoria.ca/EN/main/city/open-data-catalogue.html)
+  * [Victoria](http://opendata.victoria.ca/)
   * [Saanich](http://www.saanich.ca/EN/main/local-government/data-catalogue-1.html)
   * [Metro Vancouver](http://www.metrovancouver.org/data)
   * [City of Vancouver](http://vancouver.ca/your-government/open-data-catalogue.aspx)
@@ -111,50 +116,53 @@ There appears to be an open data site, but it hasn't been updated since 2014. No
   * [Winnipeg](https://data.winnipeg.ca/)
   * [Brandon](http://opengov.brandon.ca/OpenDataService/opendata.html)
 
-### Ontario [Data](https://www.ontario.ca/search/data-catalogue?sort=asc)
+### Ontario [Data](https://www.ontario.ca/search/data-catalogue)
 Ontario has a well-developed open data catalogue and a strong community that promotes the use and critique of open data. The province holds most of its open geodata on their catalogue.
 
 #### GTFS Feeds
   * [Thunder Bay](http://www.thunderbay.ca/living/getting_around/thunder_bay_transit/developers_-_open_data.htm)
   * [Ottawa](http://www.octranspo.com/developers)
-  * [Toronto](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=96f236899e02b210VgnVCM1000003dd60f89RCRD)
+
+  * [Toronto](https://transitfeeds.com/p/ttc/33)
   * [Barrie](http://www.barrie.ca/Living/Getting%20Around/BarrieTransit/Pages/Barrie-GTFS.aspx)
   * [Waterloo](http://www.regionofwaterloo.ca/en/regionalGovernment/GRT_GTFSdata.asp)
-  * [GO Transit - across the _Golden Horseshoe_](http://www.gotransit.com/publicroot/en/schedules/DeveloperResources.aspx)
+  * [GO Transit - across the _Golden Horseshoe_](https://www.gotransit.com/en/information-resources/software-developers)
   * [Mississaugua](http://www.mississauga.ca/portal/miway/developerdownload)
 
 #### Initiatives
   * [Regional Ecological Data Collection Project](http://redcp.matawa.opendata.arcgis.com/)
+  * [My TTC (Tools for software devs who want to enhance the TTC experienct)](https://myttc.ca)
 
 #### Regions/Towns/Cities/Etc
-  * [Toronto](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=9e56e03bb8d1e310VgnVCM10000071d60f89RCRD)
-  * [Ottawa](http://data.ottawa.ca/)
-  * [Hamilton](https://www.hamilton.ca/city-initiatives/strategies-actions/open-accessible-data)
-  * [Guelph](http://open.guelph.ca/open-data-guelph/)
-  * [Thunder Bay](http://www.thunderbay.ca/Living/Getting_Around/Thunder_Bay_Transit/Developers_-_Open_Data.htm)
-  * [London](http://london.ca/opendata)
-  * [St Catherines](https://www.stcatharines.ca/en/Niagara-Open-Data.asp)
-  * [Chatham-Kent](http://chathamkentopendata.chatham-kent.opendata.arcgis.com/)
-  * [Kitchener](http://www.kitchener.ca/en/insidecityhall/open-data.asp)
   * [Brampton](http://open.brampton.ca/)
-  * [Huron County](http://huroncounty.huron.opendata.arcgis.com/)
-  * [Haldimand County](http://opendata.haldimandcounty.on.ca/)
-  * [Kingston](https://www.cityofkingston.ca/explore/data-catalogue)
-  * [Sudbury](https://www.greatersudbury.ca/inside-city-hall/open-government/open-data/)
-  * [Mississaugua](http://data.mississauga.ca/)
-  * [North Frontenac](http://data.nftwp.opendata.arcgis.com/)
-  * [Windsor](http://www.citywindsor.ca/opendata/Pages/Open-Data-Catalogue.aspx)
   * [Burlington](http://cob.burlington.opendata.arcgis.com/)
-  * [Waterloo](http://www.waterloo.ca/en/government/opendata.asp)
-  * [Region of Waterloo](http://www.regionofwaterloo.ca/en/regionalgovernment/OpenDataHome.asp)
-  * [Peel Region](http://opendata.peelregion.ca/)
-  * [York Region](http://www.york.ca/wps/portal/yorkhome/yorkregion/yr/statisticsanddata/opendata/opendata/!ut/p/a1/jZDBTsMwDIafZYceabywrmG3UARpu6ncluWCsi1Li0pSJWGVeHrCxGUI2Hyyrc_2_xsJxJEw8thpGTprZP9Vi_lLSZ9KxmqomhkpgEJDK5wTIHUegU0E4I-gcGm-uuIAdqtipZEYZGhvOnOwiPsQFfrQ7bw0-70MEnE7KPMjWyNxWo_xbM6mBVTAGgLlY_6cPRA2hSK7ANT4G_jHYHSge7s9PWtDzfaWRKlOHZRTLn13sd2GMPhFAgmM45hqa3Wv0p1M4LeJ1vqA-BmIhjf-sby_K1-z_rikk8knfCdzrg!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/)
-  * [Welland](https://www.welland.ca/open/Opendata.asp)
-  * [Oakville](http://www.oakville.ca/data/catalogue.html)
+  * [Chatham-Kent](http://chathamkentopendata.chatham-kent.opendata.arcgis.com/)
   * [Grey County](http://opendata.grey.ca/)
+  * [Guelph](http://open.guelph.ca/open-data-guelph/)
+  * [Haldimand County](http://opendata.haldimandcounty.on.ca/)
+  * [Hamilton](https://www.hamilton.ca/city-initiatives/strategies-actions/open-accessible-data)
+  * [Huron County](http://huroncounty.huron.opendata.arcgis.com/)
+  * [London](http://london.ca/opendata)
+  * [Kitchener](http://www.kitchener.ca/en/insidecityhall/open-data.asp)
+  * [Kingston](https://www.cityofkingston.ca/explore/data-catalogue)
+  * [Milton](http://icreateopendata.public.esolutionsgroup.ca/)
+  * [Mississaugua](http://data.mississauga.ca/)
+  * [Newmarket](http://www.newmarket.ca/opendata)
   * [Niagara Falls](https://www.niagarafalls.ca/services/open/data)
   * [Niagara Region](http://niagararegion.ca/government/opendata/)
-  * [Milton](http://icreateopendata.public.esolutionsgroup.ca/)
+  * [North Frontenac](http://data.nftwp.opendata.arcgis.com/)
+  * [Oakville](http://www.oakville.ca/data/catalogue.html)
+  * [Ottawa](http://data.ottawa.ca/)
+  * [Peel Region](http://opendata.peelregion.ca/)
+  * [Region of Waterloo](http://www.regionofwaterloo.ca/en/regionalgovernment/OpenDataHome.asp)
+  * [Sudbury](https://www.greatersudbury.ca/inside-city-hall/open-government/open-data/)
+  * [St Catherines](https://www.stcatharines.ca/en/Niagara-Open-Data.asp)
+  * [Thunder Bay](http://www.thunderbay.ca/Living/Getting_Around/Thunder_Bay_Transit/Developers_-_Open_Data.htm)
+  * [Toronto](https://www.toronto.ca/city-government/data-research-maps/open-data/)
+  * [Waterloo](http://www.waterloo.ca/en/government/opendata.asp)
+  * [Welland](https://www.welland.ca/open/Opendata.asp)
+  * [Windsor](http://www.citywindsor.ca/opendata/Pages/Open-Data-Catalogue.aspx)
+  * [York Region](http://www.york.ca/wps/portal/yorkhome/yorkregion/yr/statisticsanddata/opendata/opendata/!ut/p/a1/jZDBTsMwDIafZYceabywrmG3UARpu6ncluWCsi1Li0pSJWGVeHrCxGUI2Hyyrc_2_xsJxJEw8thpGTprZP9Vi_lLSZ9KxmqomhkpgEJDK5wTIHUegU0E4I-gcGm-uuIAdqtipZEYZGhvOnOwiPsQFfrQ7bw0-70MEnE7KPMjWyNxWo_xbM6mBVTAGgLlY_6cPRA2hSK7ANT4G_jHYHSge7s9PWtDzfaWRKlOHZRTLn13sd2GMPhFAgmM45hqa3Wv0p1M4LeJ1vqA-BmIhjf-sby_K1-z_rikk8knfCdzrg!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/)
 
 
 ### Québec - [Données](https://www.donneesquebec.ca/fr/)
@@ -173,8 +181,8 @@ While not as strong as Ontario, Alberta or Britsh Columbia's open data sites, Qu
   * [St Roch Richelieu](http://data.strochrichelieu.opendata.arcgis.com/)
   * [Shawinigan](http://donnees.shawinigan.opendata.arcgis.com/)
 
-### New Brunswick - [Data](http://www.snb.ca/geonb1/e/DC/catalogue-E.asp)
-This past April, the Premier of New Brunswick [News Release](http://www2.gnb.ca/content/gnb/en/news/news_release.2016.04.0334.html). You can see their young data catalogue is at its starting stages. With luck it will flourish as time goes by. I need to be bilingual here as well.
+### New Brunswick - Date: [1](http://www.snb.ca/geonb1/e/DC/catalogue-E.asp), [2 (needs flash...)](http://geonb.snb.ca/li/index.html), [3 (AGOL LiDAR Catalogue)](http://geonb.snb.ca/li/index.html)
+This past April, the Premier of New Brunswick [News Release](http://www2.gnb.ca/content/gnb/en/news/news_release.2016.04.0334.html). You can see their young data catalogue is at its starting stages. Since then, they've taken the grand leap of providing a large LiDAR dataset, earning the distinction of being the first province to do so!
 
   * [Saint John](http://www.saintjohn.ca/en/home/cityhall/financeadmin/informationtechnology/opendata/default.aspx)
   * [Fredricton](http://www.fredericton.ca/en/city-hall)
@@ -204,19 +212,27 @@ Newfoundland and Labrador also are new to the open data world. They've only been
 
   * [St John's](http://www.stjohns.ca/event/open-data)
 
-### Yukon Territory - [Data](http://mapservices.gov.yk.ca/GeoYukon/)
+### Yukon Territory
+Currently, Yukon uses a Geocortex/Esri web portal for serving and diplaying open data. With this infrastructure, it has been busy adding data and imagery across all seasons so far in 2018:
+- [Geoyukon](http://mapservices.gov.yk.ca/GeoYukon/)
 
   * [Whitehorse](http://data.whitehorse.ca/)
 
 ### Northwest Territory
-_As of right now, there appears to be no territorial agency responsible for the dissemenation of open data. In the intern, NT Geoscience has offered a large portion of their geological data and findings in support of the mining industry. Also, a small group of civic hackers have collected some non-geospatial data and have assembled it [here](https://www.opennwt.ca/)_
+  * [NWT Centre for Geomatics](http://www.geomatics.gov.nt.ca/)
+      - _Note: Access is restricted behind a login on an unsecure HTTP website_
 
+#### Initiatives
   * [NT Geoscience](http://www.nwtgeoscience.ca/our-data-and-searching-tools)
+
+#### Regions/Cities/Etc
   * [Yellowknife](https://www.yellowknife.ca/en/discovering-yellowknife/Open-Data.asp)
 
-### Nunavit
+### Nunavut
 
-_As of right now, there appears to be no collection of data for nunavit in the open held by a provincial agency or below_
+_As of right now, there appears to be no collection of data for Nunavut in the open held by a provincial agency or below. However, Nunavit Geoscience holds a portal for geoscience information and data_
+
+  * [Nunavut Geoscience](http://nugeo.ca/pages/en/index.html)
 
 
 ## All of Canada, from outside Canada or by the best of Canada
@@ -231,7 +247,7 @@ There are some _stellar_ sources of data which exists outside of Canada with a g
 
 ## The end
 
-This is just a snapshot of the data I was able to capture that exists at the end of 2016. There's a good chance a lot of this data will no longer be at the link by the time you attempt to access it. Websites evolve, scopes evolve and so do agencies. If you feel like you want to carry the torch, you're very welome to pick up where I've stopped. This article was drafted on a [Github Repo](https://github.com/brianbancroft/OpenCanadaGeoData) and breaking this article apart is simple as forking the repository and making this into your own thing. I'd be happy for anyone to carry the torch, or just copy all my links into their own website or map.
+This is just a snapshot of the data I was able to capture that exists at the end of 2016. I've since added updates here or there. There's a good chance a lot of this data will no longer be at the link by the time you attempt to access it. Websites evolve, scopes evolve and so do agencies. If you feel like you want to carry the torch, you're very welome to pick up where I've stopped. This article was drafted on a [Github Repo](https://github.com/brianbancroft/OpenCanadaGeoData) and breaking this article apart is simple as forking the repository and making this into your own thing. I'd be happy for anyone to carry the torch, or just copy all my links into their own website or map.
 
 #### Thanks to all contributors!
 Making lists is a long process. There's a few people who took their time and offered a few links and hints. They are (in no particular order):
