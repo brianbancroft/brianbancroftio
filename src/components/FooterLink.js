@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import IconContainer from './IconContainer'
+import { IconContainer } from '../components'
 
 const TextContainer = styled.div`
   text-transform: uppercase;
@@ -12,7 +12,6 @@ const TextContainer = styled.div`
 
 class Footer extends React.Component {
   render() {
-
     const props = this.props
 
     return (
@@ -25,9 +24,7 @@ class Footer extends React.Component {
               alt={props.title}
             />
           </IconContainer>
-          <TextContainer>
-            {props.title}
-          </TextContainer>
+          <TextContainer>{props.title}</TextContainer>
         </div>
       </Link>
     )

@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
-import Footer from '../components/footer'
+import { Footer } from '../components/'
 
 import { rhythm, scale } from '../utils/typography'
+import { FooterSpacer } from '../components/'
 import './index.css'
-import FooterSpacer from '../components/FooterSpacer'
-
 
 class Template extends React.Component {
   render() {
@@ -46,7 +45,7 @@ class Template extends React.Component {
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
             marginBottom: rhythm(-1),
-            borderBottom: '1px solid #555'
+            borderBottom: '1px solid #555',
           }}
         >
           <Link
@@ -66,10 +65,10 @@ class Template extends React.Component {
     return (
       <div>
         <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
+          style={{
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
         >
           {header}
           {children()}
