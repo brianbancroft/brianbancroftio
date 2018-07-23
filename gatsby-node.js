@@ -13,7 +13,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
                   fields {
@@ -34,8 +37,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-        const selectedComponent = slug => slug.match(/^\/portfolio\//) ? portfolioPost : blogPost
+        const posts = result.data.allMarkdownRemark.edges
+        const selectedComponent = slug =>
+          slug.match(/^\/portfolio\//) ? portfolioPost : blogPost
 
         _.each(posts, (post, index) => {
           // const previous = index === posts.length - 1 ? false : posts[index + 1].node;
