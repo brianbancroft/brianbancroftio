@@ -2,6 +2,8 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { css } from 'emotion'
+import { HexTitle, Hexagon } from '../components'
 
 class PortfolioIndex extends React.Component {
   render() {
@@ -29,12 +31,11 @@ class PortfolioIndex extends React.Component {
           onClick={() => navigateTo(i.node.fields.slug)}
           style={{ cursor: 'pointer' }}
         >
-          <div
-            style={{ backgroundImage: `url(${i.node.frontmatter.preview})` }}
-          >
-            <h4 className="hex-title">{title}</h4>
-          </div>
-        </li>
+          <Hexagon
+            title={title}
+            backgroundImage={i.node.frontmatter.preview}
+          />
+        </li >
       )
     }
 
@@ -44,7 +45,7 @@ class PortfolioIndex extends React.Component {
         <ul id="categories" className="clr">
           {portfolioGallery(portfolioItems)}
         </ul>
-      </div>
+      </div >
     )
   }
 }
