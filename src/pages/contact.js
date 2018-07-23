@@ -1,4 +1,5 @@
 import React from 'react'
+import { css } from 'emotion'
 import {
   FaGithubSquare,
   FaLinkedinSquare,
@@ -6,14 +7,29 @@ import {
   FaEnvelopeSquare,
 } from 'react-icons/lib/fa'
 
+const contactsContainerStyle = css`
+  display: flex;
+  justify-content: space-around;
+`
+
+const contactLinkStyle = css`
+  color: #444;
+  text-decoration: none;
+
+  &:hover {
+    color: blue;
+  }
+`
+
 const ContactLink = content => (
-  <div className="contacts-container__contact">
+  <div>
     <a
+      className={`${contactLinkStyle}`}
       href={content.uri}
       target="_blank"
       style={{ textDecoration: 'none', display: 'inline-block' }}
     >
-      <content.IconComponent size={56} style={{ textDecoration: 'none' }} />
+      <content.IconComponent size={56} />
     </a>
   </div>
 )
@@ -55,7 +71,7 @@ class Contact extends React.Component {
             here
           </a>.
         </p>
-        <div className="contacts-container">{linkList}</div>
+        <div className={contactsContainerStyle}>{linkList}</div>
       </div>
     )
   }

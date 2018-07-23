@@ -30,6 +30,13 @@ const blogPostTitleStyle = css`
   color: white;
 `
 
+const dateContainerStyle = css`
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin-right: 10px;
+`
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -55,10 +62,7 @@ class BlogIndex extends React.Component {
             }}
           >
             <div className={`${blogPostTitleStyle}`}>{props.title}</div>
-            <div
-              className="date-container"
-              style={{ textAlign: 'right', marginRight: '10px' }}
-            >
+            <div className={`${dateContainerStyle}`}>
               <small>{props.node.frontmatter.date}</small>
             </div>
           </div>

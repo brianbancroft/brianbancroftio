@@ -4,10 +4,31 @@ import { css } from 'emotion'
 
 import { IconContainer } from '.'
 
-const style = css`
+const titleStyle = css`
   text-transform: uppercase;
   font-size: 12px;
   color: #222;
+`
+
+const linkContainerImageStyle = css`
+  @media (max-width: 350px) {
+    max-width: 100%;
+  }
+`
+
+const linkContainerStyle = css`
+  background: white;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 350px) {
+    width: 80px;
+  }
 `
 
 class Footer extends React.Component {
@@ -16,15 +37,15 @@ class Footer extends React.Component {
 
     return (
       <Link to={props.location}>
-        <div className="link-container">
+        <div className={`${linkContainerStyle}`}>
           <IconContainer>
             <img
-              className="link-container__link-image"
+              className={`${linkContainerImageStyle}`}
               src={props.iconLink}
               alt={props.title}
             />
           </IconContainer>
-          <div className={`${style}`}>{props.title}</div>
+          <div className={`${titleStyle}`}>{props.title}</div>
         </div>
       </Link>
     )
