@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
+import { css } from 'emotion'
 
 import { IconContainer } from '../components'
 
-const TextContainer = styled.div`
+const style = css`
   text-transform: uppercase;
   font-size: 12px;
   color: #222;
@@ -24,7 +24,7 @@ class Footer extends React.Component {
               alt={props.title}
             />
           </IconContainer>
-          <TextContainer>{props.title}</TextContainer>
+          <div className={`${style}`}>{props.title}</div>
         </div>
       </Link>
     )
