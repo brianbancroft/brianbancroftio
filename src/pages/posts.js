@@ -2,8 +2,33 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { css } from 'emotion'
 
-import { rhythm } from '../utils/typography'
+const blogPostContainerStyle = css`
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`
+
+const blogPostStyle = css`
+  width: 300px;
+  height: 80px;
+  margin-right: 10px;
+  margin-bottom: 19px;
+  border-radius: 3px;
+  padding: 2px 10px;
+`
+
+const blogPostTitleStyle = css`
+  color: inherit;
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 1.4427rem;
+  line-height: 1.1;
+  color: white;
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,26 +36,42 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     const title = node => get(node, 'frontmatter.title') || node.fields.slug
-    const defaultPreview = 'https://s3.amazonaws.com/cdn.brianbancroft.io/assets/blogitem.jpg'
+    const defaultPreview =
+      'https://s3.amazonaws.com/cdn.brianbancroft.io/assets/blogitem.jpg'
 
     const BlogItem = props => {
-    return (
-      <Link style={{ boxShadow: 'none', color: '#444'}} to={props.node.fields.slug} >
-        <div key={props.node.fields.slug} className="blogposts-container__blogpost" style={{backgroundImage: `url(${props.node.fields.preview || defaultPreview})`, backgroundSize: 'cover'}}>
-          <div className="blogpost-title">
-              {props.title}
+      return (
+        <Link
+          style={{ boxShadow: 'none', color: '#444' }}
+          to={props.node.fields.slug}
+        >
+          <div
+            key={props.node.fields.slug}
+            className={`${blogPostStyle}`}
+            style={{
+              backgroundImage: `url(${props.node.fields.preview ||
+                defaultPreview})`,
+              backgroundSize: 'cover',
+            }}
+          >
+            <div className={`${blogPostTitleStyle}`}>{props.title}</div>
+            <div
+              className="date-container"
+              style={{ textAlign: 'right', marginRight: '10px' }}
+            >
+              <small>{props.node.frontmatter.date}</small>
+            </div>
           </div>
-          <div className="date-container" style={{textAlign: 'right', marginRight: '10px'}}>
-            <small>{props.node.frontmatter.date}</small>
-          </div>
-        </div>
-      </Link>
-    )}
+        </Link>
+      )
+    }
 
     return (
-      <div className="blogposts-container">
+      <div className={`${blogPostContainerStyle}`}>
         <Helmet title={siteTitle} />
-        {posts.map(({ node }) => <BlogItem title={title(node)} node={node} key={node.fields.slug}/> )}
+        {posts.map(({ node }) => (
+          <BlogItem title={title(node)} node={node} key={node.fields.slug} />
+        ))}
       </div>
     )
   }
@@ -46,7 +87,7 @@ export const postsPageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC },
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/blog/" } }
     ) {
       edges {

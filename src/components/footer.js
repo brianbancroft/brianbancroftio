@@ -1,7 +1,29 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { css } from 'emotion'
+import { FooterLink } from '.'
 
-import { FooterLink } from '../components'
+const footerContainerStyle = css`
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: white;
+`
+
+const linksetContainerStyle = css`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+
+  @media (max-width: 350px) {
+    width: 90%;
+  }
+`
 
 class Footer extends React.Component {
   render() {
@@ -46,8 +68,8 @@ class Footer extends React.Component {
     ))
 
     return (
-      <div className="footer-container">
-        <div className="linkset-container">{linkItemContent}</div>
+      <div className={`${footerContainerStyle}`}>
+        <div className={`${linksetContainerStyle}`}>{linkItemContent}</div>
       </div>
     )
   }

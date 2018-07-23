@@ -1,5 +1,5 @@
 import React from 'react'
-import Globe from './Globe'
+import { Globe } from '../components'
 
 class Index extends React.Component {
   constructor(props) {
