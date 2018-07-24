@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Globe } from '../components'
 
 class Index extends React.Component {
@@ -10,8 +11,10 @@ class Index extends React.Component {
   }
 
   render() {
+    const siteTitle = 'Brian Bancroft'
     return (
       <div>
+        <Helmet title={siteTitle} />
         <p>
           Hi! I'm a generalist - A software developer with a background in
           physics and geography and with army experience. I work/play in the

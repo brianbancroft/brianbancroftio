@@ -2,12 +2,10 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import { css } from 'emotion'
-import { HexTitle, Hexagon } from '../components'
+import { HexagonContainer } from '../components'
 
 class PortfolioIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const portfolioItems = get(this, 'props.data.allMarkdownRemark.edges')
     const addGapElement = () => parseInt(Math.random() * 7) === 5
     const gapElement = <li className="pusher" />
@@ -26,22 +24,18 @@ class PortfolioIndex extends React.Component {
     const portfolioItem = i => {
       const title = get(i, 'node.frontmatter.title') || i.node.fields.slug
       return (
-        <li
-          key={i.node.fields.slug}
-          onClick={() => navigateTo(i.node.fields.slug)}
-          style={{ cursor: 'pointer' }}
-        >
-          <Hexagon
-            title={title}
-            backgroundImage={i.node.frontmatter.preview}
-          />
-        </li >
+        <HexagonContainer
+          id={i.node.fields.slug}
+          title={title}
+          backgroundImage={i.node.frontmatter.preview}
+          clickAction={() => navigateTo(i.node.fields.slug)}
+        />
       )
     }
 
     return (
       <div style={{ marginTop: '70px' }}>
-        <Helmet title={siteTitle} />
+        <Helmet title="Portfolio | Brian Bancroft" />
         <ul id="categories" className="clr">
           {portfolioGallery(portfolioItems)}
         </ul>

@@ -39,7 +39,6 @@ const dateContainerStyle = css`
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     const title = node => get(node, 'frontmatter.title') || node.fields.slug
@@ -72,7 +71,7 @@ class BlogIndex extends React.Component {
 
     return (
       <div className={`${blogPostContainerStyle}`}>
-        <Helmet title={siteTitle} />
+        <Helmet title='Posts | Brian Bancroft' />
         {posts.map(({ node }) => (
           <BlogItem title={title(node)} node={node} key={node.fields.slug} />
         ))}

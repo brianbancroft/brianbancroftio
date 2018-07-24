@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { css } from 'emotion'
 import {
   FaGithubSquare,
@@ -63,10 +64,11 @@ class Contact extends React.Component {
 
     return (
       <div>
+        <Helmet title='Get in Touch | Brian Bancroft' />
         <h2>Get in Touch!</h2>
         <p>
-          Feel free to get in touch any time you have a question or problem that
-          needs solving. My general resume is also available{' '}
+          While I'm hapilly-employed over at @EQWorks, I'm always looking for problems to solve on the side.
+          If you want to get in touch, these are the best ways to get a hold of me. Also, my general resume is also available{' '}
           <a href="https://cdn.brianbancroft.io/assets/resumes/2018/brianbancroft_development.pdf">
             here
           </a>.
