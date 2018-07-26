@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { css } from 'emotion'
 
 import { Container } from 'react-responsive-grid'
-import { Footer } from '../components'
+import { Footer } from '../components/footer'
 
 import { rhythm, scale } from '../utils/typography'
-import { FooterSpacer } from '../components'
+import { FooterSpacer } from '../components/FooterSpacer'
 import './index.css'
 
 class Template extends React.Component {

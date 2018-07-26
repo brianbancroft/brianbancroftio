@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from 'emotion'
-import { HexTitle } from '.'
+import { HexTitle } from './hex-title'
 
 class Hexagon extends React.Component {
   render() {

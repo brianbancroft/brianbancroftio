@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from 'emotion'
-import { FooterLink } from '.'
+import { FooterLink } from './FooterLink'
 
 const footerContainerStyle = css`
   position: fixed;
