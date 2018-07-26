@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Globe } from '../components/globe'
+import Globe from '../components/Globe'
 
 class Index extends React.Component {
   constructor(props) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hexagon } from './hexagon'
+import Hexagon from './Hexagon'
 
 class HexagonContainer extends React.Component {
   render() {
