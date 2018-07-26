@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from 'emotion'
 import FooterLink from './FooterLink'
 
+// Thisis a comment
 const footerContainerStyle = css`
   position: fixed;
   bottom: 0;
