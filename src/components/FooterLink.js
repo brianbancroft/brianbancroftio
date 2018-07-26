@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import IconContainer from './IconContainer'
 import { css } from 'emotion'
-
-import { IconContainer } from './IconContainer'
 
 const titleStyle = css`
   text-transform: uppercase;
