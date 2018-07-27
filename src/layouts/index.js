@@ -47,6 +47,7 @@ class Template extends React.Component {
             marginTop: 0,
             marginBottom: rhythm(-1),
             borderBottom: '1px solid #555',
+            letterSpacing: '3px',
           }}
         >
           <Link

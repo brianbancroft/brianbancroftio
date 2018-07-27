@@ -21,9 +21,9 @@ const blogPostStyle = css`
 `
 
 const blogPostTitleStyle = css`
-  color: #666;
-  font-family: helvetica;
-  font-weight: 300;
+  color: #222;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.3rem;
   line-height: 1.4rem;

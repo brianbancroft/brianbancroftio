@@ -5,7 +5,7 @@ import { css } from 'emotion'
 
 const titleStyle = css`
   text-transform: uppercase;
-  font-family: helvetica;
+  font-family: Montserrat, sans-serif;
   font-size: 12px;
   color: #222;
   font-weight: 600;
