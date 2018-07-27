@@ -21,20 +21,26 @@ const blogPostStyle = css`
 `
 
 const blogPostTitleStyle = css`
-  color: inherit;
-  font-family: 'Merriweather', 'Georgia', serif;
-  font-weight: 500;
+  color: #666;
+  font-family: helvetica;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
-  font-size: 1.4427rem;
-  line-height: 1.1;
-  color: white;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  border: 2px solid #666;
+  border-radius: 10px;
+  padding: 10px;
+  height: 80px;
+  overflow: hidden;
 `
 
 const dateContainerStyle = css`
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-family: Arial,Helvetica,sans-serif;
   text-align: right;
   margin-right: 10px;
+  position: relative;
+  bottom: 30px;
 `
 
 class BlogIndex extends React.Component {
@@ -54,11 +60,6 @@ class BlogIndex extends React.Component {
           <div
             key={props.node.fields.slug}
             className={`${blogPostStyle}`}
-            style={{
-              backgroundImage: `url(${props.node.fields.preview ||
-                defaultPreview})`,
-              backgroundSize: 'cover',
-            }}
           >
             <div className={`${blogPostTitleStyle}`}>{props.title}</div>
             <div className={`${dateContainerStyle}`}>
