@@ -1,5 +1,5 @@
 ---
-title: Gey My MP
+title: Get My MP
 date: "2016-04-12T22:12:03.284Z"
 headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp.png
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/getmymp/getmymp-intro.jpg
