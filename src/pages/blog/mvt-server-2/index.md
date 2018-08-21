@@ -1,6 +1,6 @@
 ---
 title:  "Tegola Part 2: Deploying an MVT Server"
-date: "2018-07-30T22:12:03.284Z"
+date: "2018-08-20T22:12:03.284Z"
 ---
 
 ### Before we start,
