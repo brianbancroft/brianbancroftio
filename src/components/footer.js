@@ -8,6 +8,7 @@ const footerContainerStyle = css`
   bottom: 0;
   width: 100vw;
   background: white;
+  padding-top: 5px;
 `
 
 const linksetContainerStyle = css`
