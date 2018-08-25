@@ -69,7 +69,7 @@ class Contact extends React.Component {
         <p>
           While I'm hapilly-employed over at @EQWorks, I'm always looking for problems to solve on the side.
           If you want to get in touch, these are the best ways to get a hold of me. Also, my general resume is also available{' '}
-          <a href="https://cdn.brianbancroft.io/assets/resumes/2018/brianbancroft_development.pdf">
+          <a href="https://cdn.brianbancroft.io/assets/resumes/2018/resume_brian_bancroft_2018.pdf">
             here
           </a>.
         </p>
