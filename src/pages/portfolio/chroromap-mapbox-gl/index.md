@@ -1,8 +1,8 @@
 ---
-title: Choropleth Map using MapboxGL JS
+title: MapboxGL JS Choropleth Map
 date: "2018-08-25T10:12:03.284Z"
 headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/preview.png
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/preview.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/choropleth-mapbox-preview.png
 ---
 
 ![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/preview.png)
