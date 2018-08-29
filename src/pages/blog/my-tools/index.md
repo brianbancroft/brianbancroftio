@@ -43,15 +43,23 @@ I still use NPM. I don't have a strong argument for using either NPM or Yarn, an
 
 ### Text Editors
 
-I use a combination of VIM and VSCode. Eventually, it's my intent to become vim-only, but that's going to be sometime in the future.s
+There was once a day where the fully-featured _Integrated Development Environment_ (IDE) was king. But a lot of beginners found it to be too many things to too many people. Eventually, people started once again to prefer applications that were just plain ascii text editors. Then they added _plugins_ that resulted in a stone-soup of IDE's where the community brought the functionality to the table of a plain text editor. Some of the more popular ones I've run into in my career have been Sublime Text, Atom, Notepad++ and a few others...
+
+...In my work, I use a combination of VIM and VSCode. Eventually, it's my intent to become vim-only, but that's going to be sometime in the future.
 
 #### VSCode
 
+Microsoft recently built this thing. It has plugins. It's completely open-source and free and the best.
+
+The following is a list of my plugins:
+
 #### VIM. Why?
+
+The following is a list of my plugins:
 
 ### GIS Analysis
 
-#### QGIS
+#### QGISs
 
 ### Design
 
