@@ -1,5 +1,5 @@
 ---
-title:  "Bug Bashes"
+title:  "Ensuring Robust Code and Teams with Bug Bashes"
 date: "2018-09-01T22:12:03.284Z"
 ---
 
