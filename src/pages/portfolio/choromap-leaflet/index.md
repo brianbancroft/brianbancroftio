@@ -2,10 +2,10 @@
 title: Leaflet Choropleth Map
 date: "2018-09-01T10:12:03.284Z"
 headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-icon.png
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio//leaflet-chropleth-icon.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-icon.png
 ---
 
-![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio//leaflet-chropleth-wide.png)
+![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-wide.png)
 
 ## A Bare-Bones Web-Choropleth using Leaflet
 
