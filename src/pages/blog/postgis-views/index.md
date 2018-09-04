@@ -1,5 +1,5 @@
 ---
-title:  "Using PostGIS Views to Build Datasets"
+title:  "Using Postgres Views to Build Datasets for QGIS"
 date: "2018-09-04T22:12:03.284Z"
 ---
 
