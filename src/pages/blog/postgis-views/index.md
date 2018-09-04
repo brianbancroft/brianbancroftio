@@ -26,7 +26,7 @@ The basics of _view_ creation are as easy as prepending a standard `SELECT`-quer
   )
 ```
 
-The big thing is that the output of the select-query needs to output three columns, ideally aliased `AS` `col_1`, `col_2`, and `col_3`. This can modiified in many ways. But we're going to do it now with the census database built from the example in the start.
+The big thing is that the output of the select-query needs to output three columns, ideally aliased `AS` `col_1`, `col_2`, and `col_3`. This can modified in many ways. But we're going to do it now with the census database built from the example in the start.
 
 ### Setting up the Sample Query
 
@@ -314,11 +314,11 @@ Once we've opened, the hardest part is connecting to a DB. Find the DB Manager, 
 
 ![DB Toolbar Loctation](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/add-postgis-layer.png)
 
-Once it is open, create a new database, and test the connection. Once you have tha t done, move on. We want to go into the DB Manager:
+Once it is open, create a new database, and test the connection. Once you have that done, move on. We want to go into the DB Manager:
 
 You can do this by adding the `Database Toolbar` when right-clicking on the toolbar area in QGIS and then clicking on the DB symbol when it appears.
 
-![DB Toolbar location](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/add-db-toolbar)
+![DB Toolbar location](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/add-db-toolbar.png)
 
 Once you open that up, find and select your layer, and click-and-drag to the QGIS map pane.
 
