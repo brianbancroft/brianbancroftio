@@ -50,7 +50,7 @@ In this case, `dim=81` represents the total number of couples in a given area:
 ```
 
 This took around ~12222ms
-![The result of the query](./query-1.png)
+![The result of the query](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/query-1.png)
 
 #### Selecting Couples without Children
 
@@ -68,7 +68,7 @@ Second verse, same as the first. Just instead of the dim ID being 81, it's 83.
 ```
 
 This also took around ~12222ms
-![The result of the query](./query-2.png)
+![The result of the query](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/query-2.png)
 
 ### Setting up the Join
 
@@ -121,7 +121,7 @@ We have two queries up now. Here, we want to join it with a geographic data tabl
 
 When I run this query, this is what I get:
 
-![The result of the query](./query-3.png)
+![The result of the query](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/query-3.png)
 
 It takes awhile (~26s) to process. Keep in mind that if you try this at home, you're dealing with the entirety of Canada!
 
@@ -218,7 +218,7 @@ SELECT * FROM ratio_childbearing_couples;
 
 You should receive the following:
 
-![This is verifying the view](./query-4.png)
+![This is verifying the view](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/query-4.png)
 
 The time that it takes to query from the view is a _whopping_ 26 seconds!
 
@@ -312,17 +312,17 @@ This is a spatial-centric blog, so we're going to test this using QGIS. This exe
 
 Once we've opened, the hardest part is connecting to a DB. Find the DB Manager, and connect with it.
 
-![DB Toolbar Loctation](./add-postgis-layer.png)
+![DB Toolbar Loctation](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/add-postgis-layer.png)
 
 Once it is open, create a new database, and test the connection. Once you have tha t done, move on. We want to go into the DB Manager:
 
 You can do this by adding the `Database Toolbar` when right-clicking on the toolbar area in QGIS and then clicking on the DB symbol when it appears.
 
-![DB Toolbar location](./add-db-toolbar)
+![DB Toolbar location](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/add-db-toolbar)
 
 Once you open that up, find and select your layer, and click-and-drag to the QGIS map pane.
 
-![Materialized View in QGIS](./view-result.png)
+![Materialized View in QGIS](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/postgres-view/view-result.png)
 
 From there, it's just a matter of styling!
 
