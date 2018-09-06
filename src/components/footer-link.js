@@ -34,25 +34,17 @@ const linkContainerStyle = css`
   }
 `
 
-class Footer extends React.Component {
-  render() {
-    const props = this.props
-
-    return (
-      <Link to={props.location}>
-        <div className={`${linkContainerStyle}`}>
-          <IconContainer>
-            <img
-              className={`${linkContainerImageStyle}`}
-              src={props.iconLink}
-              alt={props.title}
-            />
-          </IconContainer>
-          <div className={`${titleStyle}`}>{props.title}</div>
-        </div>
-      </Link>
-    )
-  }
-}
-
-export default Footer
+export default ({ location, iconLink, title }) => (
+  <Link to={location}>
+    <div className={`${linkContainerStyle}`}>
+      <IconContainer>
+        <img
+          className={`${linkContainerImageStyle}`}
+          src={iconLink}
+          alt={title}
+        />
+      </IconContainer>
+      <div className={`${titleStyle}`}>{title}</div>
+    </div>
+  </Link>
+)

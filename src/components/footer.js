@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from 'emotion'
 
 import { FooterLink } from '.'
+import { footerLinkValues } from '../constants'
 
 const footerContainerStyle = css`
   position: fixed;
@@ -27,63 +28,19 @@ const linksetContainerStyle = css`
   }
 `
 
-const footerLinks = [
-  {
-    iconLink:
-      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/monitor.svg',
-    location: '/',
-    title: 'home',
-    key: 1,
-  },
-  {
-    iconLink:
-      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/image.svg',
-    location: '/portfolio',
-    title: 'portfolio',
-    key: 2,
-  },
-  {
-    iconLink:
-      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/idea.svg',
-    location: '/posts',
-    title: 'posts',
-    key: 3,
-  },
-  {
-    iconLink:
-      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/chat.svg',
-    location: '/contact',
-    title: 'contact',
-    key: 4,
-  },
-]
+export default () => {
+  const linkItemContent = footerLinkValues.map(i => (
+    <FooterLink
+      key={i.key}
+      iconLink={i.iconLink}
+      location={i.location}
+      title={i.title}
+    />
+  ))
 
-const linkItemContent = footerLinks.map(i => (
-  <FooterLink
-    key={i.key}
-    iconLink={i.iconLink}
-    location={i.location}
-    title={i.title}
-  />
-))
-
-class Footer extends React.Component {
-  render() {
-    const linkItemContent = footerLinks.map(i => (
-      <FooterLink
-        key={i.key}
-        iconLink={i.iconLink}
-        location={i.location}
-        title={i.title}
-      />
-    ))
-
-    return (
-      <div className={`${footerContainerStyle}`}>
-        <div className={`${linksetContainerStyle}`}>{linkItemContent}</div>
-      </div>
-    )
-  }
+  return (
+    <div className={`${footerContainerStyle}`}>
+      <div className={`${linksetContainerStyle}`}>{linkItemContent}</div>
+    </div>
+  )
 }
-
-export default Footer

@@ -1,44 +1,26 @@
 import React from 'react'
-import { navigateTo } from 'gatsby-link'
-import get from 'lodash/get'
+import { get } from 'lodash'
 import Helmet from 'react-helmet'
 
-import { HexagonContainer } from '../components'
+import { HexagonGapElement, PortfolioItem } from '../components'
+import { addGapElement } from '../helpers'
 
 class PortfolioIndex extends React.Component {
   render() {
+    const galleryElements = []
     const portfolioItems = get(this, 'props.data.allMarkdownRemark.edges')
-    const addGapElement = () => parseInt(Math.random() * 7) === 5
-    const gapElement = <li className="pusher" />
-
-    const portfolioGallery = portfolioItems => {
-      let galleryElements = []
-      portfolioItems.forEach(i => {
-        galleryElements.push(portfolioItem(i))
-        if (addGapElement()) {
-          galleryElements.push(gapElement)
-        }
-      })
-      return galleryElements
-    }
-
-    const portfolioItem = i => {
-      const title = get(i, 'node.frontmatter.title') || i.node.fields.slug
-      return (
-        <HexagonContainer
-          id={i.node.fields.slug}
-          title={title}
-          backgroundImage={i.node.frontmatter.preview}
-          clickAction={() => navigateTo(i.node.fields.slug)}
-        />
-      )
-    }
+    portfolioItems.forEach((item, key) => {
+      galleryElements.push(<PortfolioItem item={item} key={key} index={key} />)
+      if (addGapElement()) {
+        galleryElements.push(<HexagonGapElement index={key} />)
+      }
+    })
 
     return (
       <div style={{ marginTop: '70px' }}>
         <Helmet title="Portfolio | Brian Bancroft" />
         <ul id="categories" className="clr">
-          {portfolioGallery(portfolioItems)}
+          {galleryElements}
         </ul>
       </div>
     )
