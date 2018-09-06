@@ -2,7 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
-import BlogItem from '../components/BlogItem'
+import { BlogItem } from '../components'
 
 const blogPostContainerStyle = css`
   margin-top: 50px;
@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
 
     return (
       <div className={`${blogPostContainerStyle}`}>
-        <Helmet title='Posts | Brian Bancroft' />
+        <Helmet title="Posts | Brian Bancroft" />
         {posts.map(({ node }) => (
           <BlogItem title={title(node)} node={node} key={node.fields.slug} />
         ))}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { select, geoPath, transition, timer, geoOrthographic, json } from 'd3'
+import { select, geoPath, timer, geoOrthographic } from 'd3'
 import axios from 'axios'
 const topojson = require('topojson')
 
@@ -54,7 +54,7 @@ export default class Globe extends React.Component {
         .attr('d', path)
 
       timer(() => {
-        var dt = Date.now() - time
+        let dt = Date.now() - time
         projection.rotate([
           rotate[0] + velocity[0] * dt,
           rotate[1] + velocity[1] * dt,

@@ -1,35 +1,36 @@
-bancroft.io
----
+## bancroft.io
 
-Based off of Gatsby Starter Blog. Procrastination from actually writing copy.
+Procrastination from actually writing copy. My main portfolio and blog site
 
 ## Why Gatsby?
-- I haven't touched react in about a year, and wanted to go back into it with the lessons learned from building EmberJS apps.
-- I spend too much time in Ruby and not enough time with CSS/JS
-- I don't do enough with GraphQL. Separating the default queries into two different packages was an interesting experiment (which worked)
+
+* It's overkill, but I required to grok React components after being in an EmberJS mindset
+* I spend too much time in Ruby and not enough time with CSS/JS
+* This got to be my first crack using GraphQL
+* Also my first crack at CSS-IN-JS using Emotion
 
 ## What remains
-- [x] Image layout for blog posts
-- [x] Try to integrate the [Responsive Grid of Hexagons](https://github.com/web-tiki/responsive-grid-of-hexagons) into the portfolio page
-- [x] Bottom linking in the blog/portfolio (issue fixed, hiding content for simplicity)
-    - [x] IF no newer article, go to twitter to see me rant?
-    - [x] If no newer portfolio piece, go to stumbleupon
-    - [x] Link to portfolio/blog in centre of bottom-links.
-- [ ] Clean up all stateless components.
-- [ ] Chose a different typeface for the following:
-    - [ ] Blog Posts
-    - [ ] Portfolio Pieces
-    - [ ] Remainder of the site
-- [ ] Clean circleCI Yaml for clarity
-- [ ] Linting
-    - [ ] ESLint
-    - [ ] Prettier
-    - [ ] Integrate lint checks into CircleCI
 
-
+* [x] Image layout for blog posts
+* [x] Try to integrate the [Responsive Grid of Hexagons](https://github.com/web-tiki/responsive-grid-of-hexagons) into the portfolio page
+* [x] Bottom linking in the blog/portfolio (issue fixed, hiding content for simplicity)
+  * [x] IF no newer article, go to twitter to see me rant?
+  * [x] If no newer portfolio piece, go to stumbleupon
+  * [x] Link to portfolio/blog in centre of bottom-links.
+* [x] Clean up all stateless components.
+* [x] Chose a different typeface for the following:
+  * [x] Blog Posts
+  * [x] Portfolio Pieces
+  * [x] Remainder of the site
+* [x] ~Clean circleCI Yaml for clarity~ _Migrated to Netlify_
+* [ ] Linting
+  * [x] ESLint
+  * [x] Prettier
+  * [x] ~Integrate lint checks into CircleCI~ _migrated to netlify_
 
 ## Running
-- First, get the packages -> `yarn`
-- Run in develop -> `gatsby develop`
-- Build -> `gatsby build`
-- Serve -> `gatsby serve`
+
+* First, get the packages -> `yarn install`
+* Run in develop -> `gatsby develop`
+* Build -> `gatsby build`
+* Serve -> `gatsby serve`

@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import FooterSpacer from '../components/FooterSpacer'
-
 import { rhythm, scale } from '../utils/typography'
+
+import { FooterSpacer } from '../components'
 
 class BlogPostTemplate extends React.Component {
   render() {

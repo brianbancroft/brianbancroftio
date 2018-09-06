@@ -1,6 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Globe from '../components/Globe'
+import { css } from 'emotion'
+
+import { Globe } from '../components/'
+
+const frontPageLiStyle = css`
+  margin-bottom: 5px;
+`
 
 class Index extends React.Component {
   constructor(props) {
@@ -21,10 +27,14 @@ class Index extends React.Component {
           following:
         </p>
         <ul>
-          <li style={{ marginBottom: '5px' }}>Ruby (Rails), Node (Express)</li>
-          <li style={{ marginBottom: '5px' }}>JS (Ember, Vue and React)</li>
-          <li style={{ marginBottom: '5px' }}>Mapping (ArcGIS and QGIS)</li>
-          <li style={{ marginBottom: '5px' }}>Analysis (GIS, R and Python)</li>
+          <li className={`${frontPageLiStyle}`}>
+            Ruby (Rails), Node (Express)
+          </li>
+          <li className={`${frontPageLiStyle}`}>JS (Ember, Vue and React)</li>
+          <li className={`${frontPageLiStyle}`}>Mapping (ArcGIS and QGIS)</li>
+          <li className={`${frontPageLiStyle}`}>
+            Analysis (GIS, R and Python)
+          </li>
         </ul>
         <div id="content">
           <Globe />

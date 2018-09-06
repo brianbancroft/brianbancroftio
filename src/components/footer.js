@@ -1,8 +1,8 @@
 import React from 'react'
 import { css } from 'emotion'
-import FooterLink from './FooterLink'
 
-// Thisis a comment
+import { FooterLink } from '.'
+
 const footerContainerStyle = css`
   position: fixed;
   bottom: 0;
@@ -27,39 +27,48 @@ const linksetContainerStyle = css`
   }
 `
 
+const footerLinks = [
+  {
+    iconLink:
+      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/monitor.svg',
+    location: '/',
+    title: 'home',
+    key: 1,
+  },
+  {
+    iconLink:
+      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/image.svg',
+    location: '/portfolio',
+    title: 'portfolio',
+    key: 2,
+  },
+  {
+    iconLink:
+      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/idea.svg',
+    location: '/posts',
+    title: 'posts',
+    key: 3,
+  },
+  {
+    iconLink:
+      'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/chat.svg',
+    location: '/contact',
+    title: 'contact',
+    key: 4,
+  },
+]
+
+const linkItemContent = footerLinks.map(i => (
+  <FooterLink
+    key={i.key}
+    iconLink={i.iconLink}
+    location={i.location}
+    title={i.title}
+  />
+))
+
 class Footer extends React.Component {
   render() {
-    const footerLinks = [
-      {
-        iconLink:
-          'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/monitor.svg',
-        location: '/',
-        title: 'home',
-        key: 1,
-      },
-      {
-        iconLink:
-          'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/image.svg',
-        location: '/portfolio',
-        title: 'portfolio',
-        key: 2,
-      },
-      {
-        iconLink:
-          'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/idea.svg',
-        location: '/posts',
-        title: 'posts',
-        key: 3,
-      },
-      {
-        iconLink:
-          'https://cdn.brianbancroft.io/images/brianbancroftio/footer-icons/chat.svg',
-        location: '/contact',
-        title: 'contact',
-        key: 4,
-      },
-    ]
-
     const linkItemContent = footerLinks.map(i => (
       <FooterLink
         key={i.key}

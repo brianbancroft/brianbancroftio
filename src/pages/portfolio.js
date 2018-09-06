@@ -2,7 +2,8 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import HexagonContainer from '../components/HexagonContainer'
+
+import { HexagonContainer } from '../components'
 
 class PortfolioIndex extends React.Component {
   render() {
@@ -39,7 +40,7 @@ class PortfolioIndex extends React.Component {
         <ul id="categories" className="clr">
           {portfolioGallery(portfolioItems)}
         </ul>
-      </div >
+      </div>
     )
   }
 }
