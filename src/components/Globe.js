@@ -4,7 +4,7 @@ import { createGlobe } from '../helpers'
 
 export default class Globe extends React.Component {
   componentDidMount() {
-    createGlobe()
+    createGlobe({ refs: this.refs })
   }
 
   render() {

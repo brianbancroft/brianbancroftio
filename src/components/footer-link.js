@@ -36,7 +36,7 @@ const linkContainerStyle = css`
 
 export default ({ location, iconLink, title }) => (
   <Link to={location}>
-    <div className={`${linkContainerStyle}`}>
+    <div className={`${linkContainerStyle} fade-in`}>
       <IconContainer>
         <img
           className={`${linkContainerImageStyle}`}
