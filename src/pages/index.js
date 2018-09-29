@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
 
-import { Globe } from '../components/'
+import { GlobeElement } from '../components/'
 
 const frontPageLiStyle = css`
   margin-bottom: 5px;
@@ -22,7 +22,7 @@ export default () => (
       <li className={`${frontPageLiStyle}`}>Analysis (GIS, R and Python)</li>
     </ul>
     <div id="content">
-      <Globe />
+      <GlobeElement />
     </div>
   </div>
 )
