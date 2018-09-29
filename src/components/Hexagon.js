@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from 'emotion'
 import { HexTitle } from '.'
 
+// Emotion-based style
 const hexStyle = css`
   width: 100%;
   height: 100%;
