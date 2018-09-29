@@ -18,7 +18,7 @@ You can find the code [here](https://github.com/brianbancroft/deck-gl-example)
 
 [This is bare-bones, and more of a proof-of-concept.](http://deck-voronoi.bancroft.io/)
 
-<iframe src="http://deck-voronoi.bancroft.io/" width="500" height="400"></iframe>
+<iframe src="https://dax52t85ojasl.cloudfront.net/index.html" width="500" height="400"></iframe>
 
 ## My Thoughts
 
