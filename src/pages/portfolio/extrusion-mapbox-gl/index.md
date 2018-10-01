@@ -1,8 +1,7 @@
 ---
 title: MapboxGL JS Extrusion Map
 date: "2018-08-02T10:12:03.284Z"
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/icon-extrusionmap-mapboxgl.png
-
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/icon-extrusionmap-mapboxgl.jpg
 ---
 
 ![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/wide-extrusionmap-mapboxgl.png)
@@ -13,12 +12,12 @@ This is a quick 25-minute chropleth. You can [Visit the page here](http://mapbox
 
 This map has the following:
 
-- Panning restrictions,
-- A legend,
-- Categorical styling,
-- 2.5D!
-- Polygons using GeoJSON; and,
-- Loading via an API call.
+* Panning restrictions,
+* A legend,
+* Categorical styling,
+* 2.5D!
+* Polygons using GeoJSON; and,
+* Loading via an API call.
 
 ## The Code
 
