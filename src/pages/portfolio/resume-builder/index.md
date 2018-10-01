@@ -1,13 +1,14 @@
 ---
 title: Resume Builder
 date: "2016-12-24T22:12:03.284Z"
-headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/topomap-closeup.png
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/topo-map/topomap-closeup.png
+preview: https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/resume-builder-icon.jpg
 ---
+
+![](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/resume-builder-view1.jpg)
 
 ## Why?
 
-One of my first projects at CareerJSM was to build a Resume Builder, so that customers who weren't expert with Office, or at building Resumes could build their resumes from scratch with on-screen guidance in a manner which would help career coaches have to spend much less time on guiding those who were on the hunt for a new job.
+One of my first projects at CareerJSM was to build a Resume Builder, so that customers who weren't expert with Office, or at building Resumes could build their resumes from scratch. Thanks to step-by-step on-screen guidance explaining what the job-seeker should expect as they build their resumes as they construct their work history, as well as other resources, the resume builder was successful in diverting career coach time away from the basics of "how to build a resume" and technical problems with Word or an equivalent word processor, and more on the soft-coaching!
 
 ## How
 
@@ -22,6 +23,8 @@ One of my first projects at CareerJSM was to build a Resume Builder, so that cus
 * Ruby on Rails
 * Ember JS
 * A really-awesome UX/UI/Designer ( TODO: Get link for Charles Wu)
+
+![](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/resume-builder-view2.jpg)
 
 ### The Procedure
 
@@ -38,3 +41,10 @@ Following that, the fourth step was another sample page for the non-iterable res
 Finally the last challenge was in the form of modifying iterable data in the context of Ember models. This was for jobs, education, awards, and anything iterable...
 
 Once all that was done, the remainder fell into building the actual views. In this time, UX/UI was gracious enough to have prototypes. I took all that content, and built that into reality.
+
+## Sample Outputs
+
+While you can find my real resume in my contact page, the following are sample resumes generated from this resume builder with about five minutes of effort:
+
+* [PDF](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/sample-resume-1.pdf)
+* [DocX](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/sample-resume-2.docx)
