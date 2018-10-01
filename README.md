@@ -29,6 +29,9 @@ Procrastination from actually writing copy. My main portfolio and blog site
   * [x] ~Integrate lint checks into CircleCI~ _migrated to netlify_
 * [x] Fix bottom links
   * they appear on the left for initial render...
+* [ ] Image Hash Identification
+  * Helps for image caching
+* [ ] Prevent expiriy of JS, JSON objects as well
 
 ## Running
 
