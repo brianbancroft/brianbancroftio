@@ -4,7 +4,7 @@ date: "2018-08-02T10:12:03.284Z"
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/icon-extrusionmap-mapboxgl.jpg
 ---
 
-![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/wide-extrusionmap-mapboxgl.png)
+![Header Image](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/wide-extrusionmap-mapboxgl.png)
 
 ## A Bare-Bones Web-Choropleth
 
