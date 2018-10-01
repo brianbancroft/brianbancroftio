@@ -5,7 +5,7 @@ headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leafl
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-icon.png
 ---
 
-![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-wide.png)
+![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/leaflet-chropleth-wide.jpg)
 
 ## A Bare-Bones Web-Choropleth using Leaflet
 
@@ -13,11 +13,11 @@ This is a quick 25-minute chropleth. You can [Visit the page here](http://leafle
 
 This map has the following:
 
-- A legend,
-- Categorical styling,
-- Highlighting
-- Polygons using GeoJSON; and,
-- Loading via an API call.
+* A legend,
+* Categorical styling,
+* Highlighting
+* Polygons using GeoJSON; and,
+* Loading via an API call.
 
 ## The Code
 
