@@ -4,27 +4,25 @@ import styled from 'react-emotion'
 import { FooterLink } from '.'
 import { footerLinkValues } from '../constants'
 
-const FooterContainer = styled('div')`
+const LinksetContainer = styled('div')`
   position: fixed;
   bottom: 0;
-  width: 100vw;
   background: white;
-  padding-top: 5px;
-`
-
-const LinksetContainer = styled('div')`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 600px;
+  width: 100vw;
   margin: 0 auto;
+  padding: 5px 28% 0 28%;
 
   @media (max-width: 600px) {
     width: 90%;
+    padding: 5px 0 0 0;
   }
 
   @media (max-width: 350px) {
     width: 90%;
+    padding: 5px 0 0 0;
   }
 `
 
@@ -38,9 +36,5 @@ export default () => {
     />
   ))
 
-  return (
-    <FooterContainer>
-      <LinksetContainer>{linkItemContent}</LinksetContainer>
-    </FooterContainer>
-  )
+  return <LinksetContainer>{linkItemContent}</LinksetContainer>
 }
