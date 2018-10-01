@@ -3,7 +3,7 @@ import { css } from 'emotion'
 
 const hexHeader4Style = css`
   padding: 0 5%;
-  background-color: rgba(71, 82, 93, 0.77);
+  background-color: rgba(71, 82, 93, 0.4);
   font-family: 'Raleway', sans-serif;
   bottom: 0%;
   font-weight: 500;
@@ -38,6 +38,6 @@ const hexHeader4Style = css`
     vertical-align: middle;
   }
 `
-export default ({ children }) =>
+export default ({ children }) => (
   <h4 className={`${hexHeader4Style}`}>{children}</h4>
-
+)
