@@ -27,7 +27,7 @@ Procrastination from actually writing copy. My main portfolio and blog site
   * [x] ESLint
   * [x] Prettier
   * [x] ~Integrate lint checks into CircleCI~ _migrated to netlify_
-* [ ] Fix bottom links
+* [x] Fix bottom links
   * they appear on the left for initial render...
 
 ## Running
