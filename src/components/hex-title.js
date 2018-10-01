@@ -1,43 +1,26 @@
 import React from 'react'
 import { css } from 'emotion'
 
-const hexHeader4Style = css`
-  padding: 0 5%;
-  background-color: rgba(71, 82, 93, 0.4);
-  font-family: 'Raleway', sans-serif;
-  bottom: 0%;
-  font-weight: 500;
-  font-size: 1em;
+const copyBlockStyle = css`
+  min-height: 50px;
   width: 100%;
-  padding-top: 100%;
-  padding-bottom: 50%;
-
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: 45%;
-    width: 10%;
-    text-align: center;
-    z-index: 1;
-    border-bottom: 2px solid #fff;
-  }
-
-  -webkit-transition: top 0.2s ease-out, bottom 0.2s ease-out,
-    0.2s padding 0.2s ease-out;
-  -ms-transition: top 0.2s ease-out, bottom 0.2s ease-out,
-    0.2s padding 0.2s ease-out;
-  transition: top 0.2s ease-out, bottom 0.2s ease-out,
-    0.2s padding 0.2s ease-out;
+  margin-top: 30%;
+  padding: 5px 8px;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  top: 0px;
+  text-transform: uppercase;
+  font-size: 1em;
 
   @media (max-width: 600px) {
     bottom: 0%;
-    padding-bottom: 40%;
     font-size: 10px;
     vertical-align: middle;
+    line-height: 12px;
+    font-size: 0.5em;
   }
 `
 export default ({ children }) => (
-  <h4 className={`${hexHeader4Style}`}>{children}</h4>
+  <div className={`${copyBlockStyle}`}>{children}</div>
 )

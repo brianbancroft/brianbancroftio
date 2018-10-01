@@ -1,5 +1,5 @@
 ---
-title: "Voronoi Polygons using Deck.GL"
+title: "Voronoi using Deck.GL"
 date: "2018-09-30T10:12:03.284Z"
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/deck-voronoi/voronoi-square.jpg
 ---

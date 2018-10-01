@@ -1,11 +1,10 @@
 ---
-title: Map packaging and Georeferencing
+title: ArcGIS Scripting
 date: "2014-04-20T10:12:03.284Z"
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/arcpy-logo.png
 ---
 
 [(Github Repo)](https://github.com/brianbancroft/MassGeorefAndWebPrepare)
-
 
 ## Why
 
@@ -15,19 +14,19 @@ This script took a series of tif's, a indexing spreadsheet, and outputted a seri
 
 ### Techniques
 
-- Using cursors
-- Georeferencing
-- Using third-party libraries to read Excel and similar docs
-- Messing with strings
+* Using cursors
+* Georeferencing
+* Using third-party libraries to read Excel and similar docs
+* Messing with strings
 
 ## Lessons Observed
+
 This is where I learned that I enjoyed programming, and wanted to pursue it as a career. Since then, I started to automate anything I could at my following jobs.
 
 Since then, I've become skilled in the following areas:
-- Git. My commit messages no longer suck
-- Naming and Algorithms
-    - I'm still a bit sloppy when it comes to fire-and-forget scripts...
-    - ...Unless I require to share them with the team.
-    - But I regularly use Pylint and Prettier.
 
-
+* Git. My commit messages no longer suck
+* Naming and Algorithms
+  * I'm still a bit sloppy when it comes to fire-and-forget scripts...
+  * ...Unless I require to share them with the team.
+  * But I regularly use Pylint and Prettier.
