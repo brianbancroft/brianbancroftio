@@ -1,13 +1,20 @@
 ---
 title:  "My Toolkit"
-date: "2018-08-31T22:12:03.284Z"
+date: "2018-09-30T22:12:03.284Z"
 ---
 
-It's been about two years since I retooled as a web-developer from working in the mapping field, in the field. Since then, I've been finding myself bouncing between front-end client-side development (making things connect on web pages, and making them look pretty), back-end development (Building the interaction between web pages and small servers, designing and kitting up the databases), and some orchestration (which I'm still awful at)
+It's been about two years since I retooled as a web-developer from working in the mapping field, in the field. Since then, I've been finding myself bouncing between front-end client-side development (making things connect on web pages, and making them look pretty), back-end development (Building the interaction between web pages and small servers, designing and kitting up the databases), and some orchestration (which I'm still awful at). This is the list of tools that I use. Expect this article to be constantly refreshed as my tastes change!
 
 ## Hardware
 
-My main piece of kit is a 2015 Macbook Pro (MBP) 15". As a rough field-working type, it's _vitally_ important that the device can do all my coding and map work, and still be able to manage [dust]() (link to article about new mbp kb's go here). While Apple has continued to build better keyboards, and I've heard that the 2018 MBP's have protection for their keyboards, I want to wait a couple more years before I take a risk in acquiring grabbing a new mac.
+My main piece of kit is a 2015 Macbook Pro (MBP) 15". As a rough field-working type, it's _vitally_ important that the device can do all my coding and map work. While Apple has continued to build better keyboards, and I've heard that the 2018 MBP's have protection for their keyboards, I want to wait a couple more years before I take a risk in acquiring grabbing a new mac. In addition, I have the following:
+
+* An LG 42" Monitor,
+* A Magic Trackpad (V2),
+* A Magic Mouse (V1),
+* Blue-light filtering glasses,
+* An oldschool Mac USB Keyboard with the numeric input; and,
+* A series of cross-section cuts of a fir tree that I use for a stand.
 
 ## Software
 
@@ -15,15 +22,13 @@ I only get to make great things when I step on the shoulders of giants. When I b
 
 ### Command Line and its Plugins
 
-#### Iterm2
+#### Iterm 2
 
 Iterm is a command line program for MacOS known for its customizability. I especially like it for it's toggle show/hide shortcut, which is directly linked to my workflow. It also allows split screens through a keyboard shortcut, which is tremendously useful.
 
 #### OH-MY-ZSH
 
-<!-- TODO: Understand difference between bash and zsh -->
-
-Most command lines in MacOS run on Bash, which is fine. There is also something called Zsh which is another type of command line that ...
+Most command lines in MacOS run on Bash, which is fine. There is also something called Zsh which is another flavour of command line. It's my preference, at this time.
 
 #### Powerlevel9k
 
@@ -35,7 +40,7 @@ Powerlevel9k is my preferred plugin that deals with the visualizations in the co
 
 I use RVM and NVM. Truth is many software platforms I work on or experiment with use different versions of Ruby or Node, and being able to switch between versions seamlessly is very important.
 
-#### ... And in Python...
+#### ... And in Python
 
 Anaconda. Get it, figure it out, love it. There are so many dark and twisting paths in Python package management, and this seems to be the best solution on the block. If you're reading this, and are having problems or qualms with it, then the geo community's very own @spara can help in that she can point you in the right direction, or help effect change in the event that structural issues prevent you from going forward.
 
@@ -61,54 +66,49 @@ The following is a list of my plugins:
 
 ##### Theme
 
-- Cobalt2
+* Cobalt2
   This is a theme that was built by Wes Bos, and works for my purposes.
 
 ##### Code Smells
 
-- Pylint
-- Rubocop
-- ESLint
-- Pretiter
+* Pylint
+* Rubocop
+* ESLint
+* Pretiter
+* Markdownlint
+* Import Cost
+
+The last one is fantastic, and offers me an early warning on the package size of any dependency I'm about to add.
 
 ##### Organization of Schtuff
 
-- Better Comments
-- Rainbow CSV
+* Better Comments
+* Rainbow CSV
 
 As geo people, we deal with CSV a lot more than we want to. When we look at it raw, it can be hard to tell which column a cell belongs to. This plugin helps by colouring the text of each column the same.
 
-- vscode-input-sequence
+* vscode-input-sequence
 
 Sometimes as a developer, you're going to have to make write multiple lines of the same thing, but with different numbers. This helps by allowing you to select multiple things and add a sequential number of _any_ geometric series. It's a decent time-saver.
 
-- Better TOML
+* Better TOML
 
 This is just syntax-highlighting for TOML files. Useful if you're going to be getting into Tegola, which uses TOML as its standard for configuration...
 
-- DotENV
+* DotENV
 
 Syntax highlighting of dotenv files. Useful.
 
 ##### Version Control
 
-- GitLens
+* GitLens
 
 Essential. This helps me observe who changed what when, all from the comfort of my text editor. Great if I need to ask people how they did that thing they just did.
 
-##### Misc Utility
-
-The following are just highlighting, and other utilities for specific languages.
-
-- ElixirLS
-- GraphQL for VSCode
-- Python
-- Ruby
-
 ##### Snippetry
 
-- HTML Snippets
-- ES6 Code Snippets
+* HTML Snippets
+* ES6 Code Snippets
 
 #### VIM. Why?
 
@@ -118,7 +118,7 @@ I personally use it for dotfile configuration, as well as git branch management.
 
 The following is a list of my plugins:
 
-- Pathogen
+* Pathogen
   Pathogen is a VIM package manager that allows you to add or remove packages to vim. This is great if you want to pimp Vim up with themes, linting, or other helpful trucks.
 
 ### GIS Analysis
@@ -137,7 +137,7 @@ This is something I earned as part of a scholarship in 2013, and I kick its tire
 
 #### Sketch
 
-A note: I am horrible at design. I enjoy brutalism, and believe that speed is better than looks. That being said, I still endorse Sketch as a tool for mocking up my sites, when you don't feel like paying the cash for Adobe CS
+A note: I am horrible at design. I enjoy brutalism, and believe that speed is better than looks. That being said, I still endorse Sketch as a tool for mocking up my sites.
 
 #### Affinity Photo and Designer.
 
