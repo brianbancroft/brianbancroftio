@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { css } from 'emotion'
-import { HexagonBase } from '.'
 import { HexTitle } from '.'
 
 // Emotion-based style
