@@ -11,6 +11,9 @@ module.exports = {
     //   resolve: `gatsby-plugin-feed`,
     // },
     {
+      resolve: `gatsby-plugin-emotion`,
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -53,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-119666699-3",
+        trackingId: 'UA-119666699-3',
         // Puts tracking script in the head instead of the body
         head: true,
         // Setting this parameter is optional
@@ -61,7 +64,7 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
     },
   ],
