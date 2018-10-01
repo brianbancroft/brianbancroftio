@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'react-emotion'
-
-import { IconContainer } from '.'
+import styled, { css } from 'react-emotion'
 
 const LinkName = styled('div')`
   text-transform: uppercase;
@@ -28,12 +26,16 @@ const LinkContainer = styled('div')`
   }
 `
 
+const linkIconStyle = url => css`
+  height: 60px;
+  width: 60px;
+  background: url(${url});
+`
+
 export default ({ location, iconLink, title }) => (
   <Link to={location}>
     <LinkContainer>
-      <IconContainer>
-        <img src={iconLink} alt={title} />
-      </IconContainer>
+      <div className={`${linkIconStyle(iconLink)}`} />
       <LinkName>{title}</LinkName>
     </LinkContainer>
   </Link>

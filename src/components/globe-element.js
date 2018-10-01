@@ -2,7 +2,7 @@ import React from 'react'
 
 import { createGlobe } from '../helpers'
 
-// A comment
+// Currently not in use
 export default class Globe extends React.Component {
   componentDidMount() {
     createGlobe({ refs: this.refs })
