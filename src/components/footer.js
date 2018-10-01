@@ -16,12 +16,6 @@ const LinksetContainer = styled('div')`
   padding: 5px 28% 0 28%;
 
   @media (max-width: 600px) {
-    width: 90%;
-    padding: 5px 0 0 0;
-  }
-
-  @media (max-width: 350px) {
-    width: 90%;
     padding: 5px 0 0 0;
   }
 `
