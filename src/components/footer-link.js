@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { css } from 'emotion'
+import styled from 'react-emotion'
 
 import { IconContainer } from '.'
 
-const titleStyle = css`
+const LinkName = styled('div')`
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
@@ -13,13 +13,7 @@ const titleStyle = css`
   letter-spacing: 2px;
 `
 
-const linkContainerImageStyle = css`
-  @media (max-width: 350px) {
-    max-width: 100%;
-  }
-`
-
-const linkContainerStyle = css`
+const LinkContainer = styled('div')`
   background: white;
   height: 90px;
   width: 90px;
@@ -36,15 +30,11 @@ const linkContainerStyle = css`
 
 export default ({ location, iconLink, title }) => (
   <Link to={location}>
-    <div className={`${linkContainerStyle} fade-in`}>
+    <LinkContainer>
       <IconContainer>
-        <img
-          className={`${linkContainerImageStyle}`}
-          src={iconLink}
-          alt={title}
-        />
+        <img src={iconLink} alt={title} />
       </IconContainer>
-      <div className={`${titleStyle}`}>{title}</div>
-    </div>
+      <LinkName>{title}</LinkName>
+    </LinkContainer>
   </Link>
 )
