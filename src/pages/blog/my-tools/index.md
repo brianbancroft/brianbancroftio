@@ -34,7 +34,7 @@ Most command lines in MacOS run on Bash, which is fine. There is also something 
 
 Powerlevel9k is my preferred plugin that deals with the visualizations in the command line. It's highly extensible and once you get over how to build it, it will help you turn your plain command line into something like this:
 
-![command line prompt](./command-line.png)
+![command line prompt](https://cdn.brianbancroft.io/images/brianbancroftio/blog-articles/tooling/command-line.jpg)
 
 #### Version Management in Ruby and Node
 
