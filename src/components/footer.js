@@ -1,10 +1,18 @@
 import React from 'react'
-import { css } from 'emotion'
+import styled, { css } from 'react-emotion'
 
 import { FooterLink } from '.'
 import { footerLinkValues } from '../constants'
 
 const footerContainerStyle = css`
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: white;
+  padding-top: 5px;
+`
+
+const FooterContainer = styled('div')`
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -39,8 +47,8 @@ export default () => {
   ))
 
   return (
-    <div className={`${footerContainerStyle}`}>
+    <FooterContainer>
       <div className={`${linksetContainerStyle}`}>{linkItemContent}</div>
-    </div>
+    </FooterContainer>
   )
 }
