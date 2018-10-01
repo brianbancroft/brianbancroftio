@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import { rhythm, scale } from '../utils/typography'
-import { FooterSpacer } from '../components'
 
 class PortfolioPieceTemplate extends React.Component {
   render() {
@@ -30,7 +29,6 @@ class PortfolioPieceTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <FooterSpacer />
       </div>
     )
   }

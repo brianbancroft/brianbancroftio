@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { rhythm, scale } from '../utils/typography'
 
-import { FooterSpacer } from '../components'
-
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -30,7 +28,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <FooterSpacer />
       </div>
     )
   }
