@@ -1,11 +1,10 @@
 ---
 title: MapboxGL JS Choropleth Map
 date: "2018-08-25T10:12:03.284Z"
-headerImage: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/preview.png
-preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/choropleth-mapbox-preview.png
+preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/mapbox-choropleth-icon.jpg
 ---
 
-![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/preview.png)
+![Header Image](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/mapbox-choropleth-preview.png)
 
 ## A Bare-Bones Web-Choropleth
 
@@ -13,11 +12,11 @@ This is a quick 25-minute chropleth, and the first entry in a series where I mak
 
 This map has the following:
 
-- Panning restrictions,
-- A legend,
-- Categorical styling,
-- Polygons using GeoJSON; and,
-- Loading via an API call.
+* Panning restrictions,
+* A legend,
+* Categorical styling,
+* Polygons using GeoJSON; and,
+* Loading via an API call.
 
 ## The Code
 
