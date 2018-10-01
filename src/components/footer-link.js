@@ -35,7 +35,7 @@ const linkIconStyle = url => css`
 export default ({ location, iconLink, title }) => (
   <Link to={location}>
     <LinkContainer>
-      <div className={`${linkIconStyle(iconLink)}`} />
+      {/* <div className={`${linkIconStyle(iconLink)}`} /> */}
       <LinkName>{title}</LinkName>
     </LinkContainer>
   </Link>
