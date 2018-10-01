@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 import { rhythm, scale } from '../utils/typography'
 
-import { Footer, FooterSpacer } from '../components/'
+import { Footer } from '../components/'
 import './index.css'
 
 class Template extends React.Component {
@@ -74,7 +74,6 @@ class Template extends React.Component {
           {header}
           {children()}
         </Container>
-        <FooterSpacer />
         <Footer />
       </div>
     )
