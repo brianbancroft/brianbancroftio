@@ -10,23 +10,16 @@ preview: https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/po
 
 One of my first projects at CareerJSM was to build a Resume Builder, so that customers who weren't expert with Office, or at building Resumes could build their resumes from scratch. Thanks to step-by-step on-screen guidance explaining what the job-seeker should expect as they build their resumes as they construct their work history, as well as other resources, the resume builder was successful in diverting career coach time away from the basics of "how to build a resume" and technical problems with Word or an equivalent word processor, and more on the soft-coaching!
 
-## How
-
-* Use a JS library to insert content directly into XML docs for Word, Word 2003+
-* Use a rails library and 3rd party api to feed HTML and Style directly into a PDF view
-* Use jsonresume's agreed syntax as a starting point for the data structure for a job-seeker's resume
-* Build on that.
-
-### The Stack:
+### The Stack
 
 * Json Resume
 * Ruby on Rails
 * Ember JS
-* A really-awesome UX/UI/Designer ( TODO: Get link for Charles Wu)
+* [A really-awesome UX/UI/Designer](https://charleswu.ca/)
 
 ![](https://s3.amazonaws.com/cdn.brianbancroft.io/images/brianbancroftio/portfolio/resume-builder/resume-builder-view2.jpg)
 
-### The Procedure
+### The How
 
 While the UX/UI chief was determinging how the featureset would feel like, and how it would taste, I set off to build the API, frequently checking back to ensure that my colleague's concept of operations didn't change often (and adjusting whenever it was likely to happen).
 
@@ -41,6 +34,8 @@ Following that, the fourth step was another sample page for the non-iterable res
 Finally the last challenge was in the form of modifying iterable data in the context of Ember models. This was for jobs, education, awards, and anything iterable...
 
 Once all that was done, the remainder fell into building the actual views. In this time, UX/UI was gracious enough to have prototypes. I took all that content, and built that into reality.
+
+After that, the remainder was HTML/XML, and styling templates using Microsoft Word, or even tiny snapshots through external API's.
 
 ## Sample Outputs
 
