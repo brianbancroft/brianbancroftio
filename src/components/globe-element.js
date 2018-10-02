@@ -12,6 +12,7 @@ export default class Globe extends React.Component {
     return (
       <div
         id="globe"
+        className="fade-in"
         ref="globe"
         style={{
           position: 'fixed',
