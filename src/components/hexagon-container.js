@@ -7,6 +7,7 @@ import { HexTitle } from '.'
 const hexStyle = img => css`
   &:before {
     background-image: url(${img});
+    background-size: cover;
     display: inline-block;
     content: '';
   }

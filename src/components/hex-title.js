@@ -6,9 +6,10 @@ const copyBlockStyle = css`
   width: 100%;
   margin-top: 30%;
   padding: 5px 8px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  line-height: 1.5em;
   top: 0px;
   text-transform: uppercase;
   font-size: 1em;
