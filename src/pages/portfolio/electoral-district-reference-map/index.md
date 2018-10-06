@@ -4,7 +4,7 @@ date: "2018-10-05T10:12:03.284Z"
 preview: https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/ridingmap/ridingmap.jpg
 ---
 
-This is a quick stylist redo of the Elections Canada riding map for the Mississauga-Lakeshroe EDA map. I initially saw the original map as useful, but not aesthetically pleasing.
+This is a quick stylistic redo of the Elections Canada riding map for the Mississauga-Lakeshroe EDA map. I initially saw the original map as useful, but not aesthetically pleasing.
 
 [![Original](https://cdn.brianbancroft.io/images/brianbancroftio/portfolio/ridingmap/elections-canada-map.jpg)](http://www.elections.ca/res/cir/maps2/images/atlas/35061.pdf)
 
