@@ -1,11 +1,24 @@
 import React from 'react'
 import { get } from 'lodash'
 import Helmet from 'react-helmet'
+import NProgress from 'nprogress'
 
 import { HexagonGapElement, PortfolioItem } from '../components'
 import { addGapElement } from '../helpers'
 
 class PortfolioIndex extends React.Component {
+  componentWillUnmount () {
+    NProgress.start()
+  }
+
+  componentWillMount () {
+    NProgress.set(0.4)
+  }
+
+  componentDidMount () {
+    NProgress.done()
+  }
+
   render() {
     const galleryElements = []
     const portfolioItems = get(this, 'props.data.allMarkdownRemark.edges')

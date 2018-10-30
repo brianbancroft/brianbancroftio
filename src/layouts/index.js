@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
+import Helmet from 'react-helmet'
 import { Container } from 'react-responsive-grid'
 import { rhythm, scale } from '../utils/typography'
 
@@ -65,6 +65,9 @@ class Template extends React.Component {
     }
     return (
       <div>
+        <Helmet>
+          <link rel='stylesheet' href='nprogress.css'/>
+        </Helmet>
         <Container
           style={{
             maxWidth: rhythm(24),
