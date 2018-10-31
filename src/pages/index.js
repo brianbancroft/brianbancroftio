@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
-import NProgress from 'nprogress';
 
 
 import { GlobeElement } from '../components/'
@@ -11,17 +10,6 @@ const frontPageLiStyle = css`
 `
 
 class Index extends Component {
-  componentWillUnmount () {
-    NProgress.start()
-  }
-
-  componentWillMount () {
-    NProgress.set(0.4)
-  }
-
-  componentDidMount () {
-    NProgress.done()
-  }
 
   render() {
     return (

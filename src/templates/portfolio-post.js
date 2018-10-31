@@ -1,22 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import NProgress from 'nprogress'
 import { rhythm, scale } from '../utils/typography'
 
 class PortfolioPieceTemplate extends React.Component {
-  componentWillUnmount () {
-    NProgress.start()
-  }
-
-  componentWillMount () {
-    NProgress.set(0.4)
-  }
-
-  componentDidMount () {
-    NProgress.done()
-  }
-
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')

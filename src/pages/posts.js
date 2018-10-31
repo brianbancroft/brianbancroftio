@@ -3,7 +3,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
 import { BlogItem } from '../components'
-import NProgress from 'nprogress'
 
 const blogPostContainerStyle = css`
   margin-top: 50px;
@@ -13,18 +12,6 @@ const blogPostContainerStyle = css`
 `
 
 class BlogIndex extends React.Component {
-  componentWillUnmount () {
-    NProgress.start()
-  }
-
-  componentWillMount () {
-    NProgress.set(0.4)
-  }
-
-  componentDidMount () {
-    NProgress.done()
-  }
-
   render() {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const title = node => get(node, 'frontmatter.title') || node.fields.slug

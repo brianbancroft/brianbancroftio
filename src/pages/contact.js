@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
-import NProgress from 'nprogress'
 
 import { ContactLink } from '../components'
 import { contactLinkValues } from '../constants'
@@ -13,18 +12,6 @@ const contactsContainerStyle = css`
 
 
 class Contact extends Component {
-
-  componentWillUnmount () {
-    NProgress.start()
-  }
-
-  componentWillMount () {
-    NProgress.set(0.4)
-  }
-
-  componentDidMount () {
-    NProgress.done()
-  }
   render() {
     const linkList = contactLinkValues.map(i => (
       <ContactLink key={i.key} uri={i.uri} IconComponent={i.component} />
