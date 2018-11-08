@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
 
@@ -9,7 +9,6 @@ const contactsContainerStyle = css`
   display: flex;
   justify-content: space-around;
 `
-
 
 class Contact extends Component {
   render() {
@@ -23,9 +22,9 @@ class Contact extends Component {
         <h2>Get in Touch!</h2>
         <p>
           I'm always looking for problems to solve on the side, and am able to
-          take on short contracts. If you want to get in touch, these are the best
-          ways to get a hold of me. If you want it, my general resume is also
-          available{' '}
+          take on short contracts. If you want to get in touch, these are the
+          best ways to get a hold of me. If you want it, my general resume is
+          also available{' '}
           <a href="https://cdn.brianbancroft.io/assets/resumes/2018/resume_brian_bancroft_2018.pdf">
             here
           </a>. My skills are mainly in GIS analysis, mapmaking, and fullstack
@@ -33,9 +32,15 @@ class Contact extends Component {
           with most other stacks.
         </p>
         <div className={contactsContainerStyle}>{linkList}</div>
+        <br />
+        <br />
+
+        <div className="github-thing">
+          <img src="https://ghchart.rshah.org/555555/brianbancroft" />
+        </div>
       </div>
     )
   }
 }
 
-export default Contact;
+export default Contact
