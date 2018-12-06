@@ -84,11 +84,11 @@ body {
 
 .fade-in {
   opacity: 0;
-  -webkit-animation: fadein 120s;
-  -moz-animation: fadein 120s;
-  -ms-animation: fadein 120s;
-  -o-animation: fadein 120s;
-  animation: fadein 120s;
+  -webkit-animation: fadein 7s forwards;
+  -moz-animation: fadein 7s forwards;
+  -ms-animation: fadein 7s forwards;
+  -o-animation: fadein 7s forwards;
+  animation: fadein 7s forwards;
 }
 
 @keyframes fadein {
